@@ -7,7 +7,7 @@ import RentingButton from '../Components/RentingButton';
 import CheckBox from '@react-native-community/checkbox';
 import Button2 from '../Components/Button2';
 const Agents = ({navigation}) => {
-  const [toggleCheckBox, setToggleCheckBox] = React.useState(true)
+  const [toggleCheckBox, setToggleCheckBox] = React.useState(false)
     return (
      
             <View style={Styles.ProfileDetails_container}>
@@ -69,27 +69,6 @@ onValueChange={(newValue) => setToggleCheckBox(newValue)}
 <View style={{marginBottom:20}}></View>
 
 
-<View
-style={{flexDirection:'row'
-,justifyContent:'center'
-}}
->
-<Button title="Save" 
-          style={{height: 40, width: 70}} 
-          textStyle={{color: Colors.blackBlue}}
-        />
-       
-<View
-style={{width:10}}
->
-
-</View>
-<Button 
-          title="Add More Services" 
-          style={Styles.Next} textStyle={{color: Colors.yellow}}
-         />
-
-</View>
 
 
 
