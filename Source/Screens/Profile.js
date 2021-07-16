@@ -51,7 +51,7 @@ const Profile = ({navigation}) => {
       <View style={{flex: 1, paddingHorizontal: 20, marginBottom: 10}}>
         <TouchableOpacity
           onPress={() => {
-            navigation.navigate(Profile_Details);
+            navigation.navigate('Profile_Details');
           }}>
           <Profile_card1 title="Profile Details" />
         </TouchableOpacity>
