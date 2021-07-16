@@ -32,6 +32,7 @@ export default class HomeScreen extends Component {
     return (
       <FlatList
         style={styles.container}
+        contentContainerStyle={{padding: 0}}
         ListEmptyComponent={
           <>
             <Image source={headerImage} style={styles.headerImage} />
@@ -41,7 +42,8 @@ export default class HomeScreen extends Component {
               <LeadComponent />
             </View>
           </>
-        }></FlatList>
+        }
+      />
       // <View style={{flex: 1}}>
       //     <View style={{flex: 1, backgroundColor: 'green', elevation: -1}}></View>
       //     <View style={{flex: 1, backgroundColor: 'yellow'}}></View>
@@ -66,14 +68,13 @@ export default class HomeScreen extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    padding: 3,
     backgroundColor: '#121417',
+    flex: 1,
   },
   headerImage: {
-    height: 180,
+    height: 170,
     width: '100%',
-    resizeMode: 'stretch',
+    // resizeMode: 'cover',
   },
   contentContainer: {
     padding: 10,

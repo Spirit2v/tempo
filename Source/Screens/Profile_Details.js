@@ -14,7 +14,6 @@ const Profile_Details = ({navigation, percentage = 0}) => {
         style={{
           color: 'white',
           alignSelf: 'flex-start',
-          paddingLeft: 15,
         }}>{`${percentage}% completed`}</Text>
       <ProgressBar
         unfilledColor="#6d6e70"
@@ -23,7 +22,7 @@ const Profile_Details = ({navigation, percentage = 0}) => {
         width={369}
         height={8}
         borderWidth={0}
-        style={{margin: 20}}
+        style={{marginVertical: 10}}
       />
       <Profile_TextinputCard placeholder="Name" />
       <Profile_TextinputCard placeholder="Email ID" />
@@ -37,7 +36,8 @@ const Profile_Details = ({navigation, percentage = 0}) => {
           justifyContent: 'space-between',
           width: 152,
           position: 'absolute',
-          bottom: 70,
+          bottom: 100,
+          alignSelf: 'center'
         }}>
         <Button
           title="Save"

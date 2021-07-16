@@ -92,7 +92,12 @@ const SignUp = () => {
         <TouchableOpacity
           style={styles.signUpButton}
           onPress={() => {
-            navigation.navigate('Home');
+            navigation.dispatch(CommonActions.reset({
+              index: 0,
+              routes: [
+                {name: 'Home'}
+              ]
+            }))
           }}>
           <Text style={styles.signUpLabel}>SignUp</Text>
         </TouchableOpacity>

@@ -16,7 +16,6 @@ export default Profile_TextinputCard;
 
 const styles = StyleSheet.create({
   Box: {
-    width: 370,
     height: 43,
     backgroundColor: Colors.blackBlue,
     borderRadius: 10,

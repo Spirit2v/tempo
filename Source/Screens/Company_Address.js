@@ -11,7 +11,7 @@ const Company_Address = ({navigation, route}) => {
   let {percentage } = route.params;
   return (
     <View style={Styles.ProfileDetails_container}>
-      <Text style={{color: 'white', alignSelf: 'flex-start', paddingLeft: 15}}>{`${percentage}% completed`}</Text>
+      <Text style={{color: 'white', alignSelf: 'flex-start'}}>{`${percentage}% completed`}</Text>
       <ProgressBar
         unfilledColor="#6d6e70"
         color={Colors.yellow}
@@ -19,7 +19,7 @@ const Company_Address = ({navigation, route}) => {
         width={369}
         height={8}
         borderWidth={0}
-        style={{margin: 20}}
+        style={{marginVertical: 10}}
       />
       <Profile_TextinputCard placeholder="Building Name" />
       <Profile_TextinputCard placeholder="H.No./Door No." />
@@ -34,12 +34,15 @@ const Company_Address = ({navigation, route}) => {
           marginTop: 50,
           justifyContent: 'space-between',
           width: 152,
+          position: 'absolute',
+          bottom: 100,
+          alignSelf: 'center'
         }}>
         <Button title="Save" style={{height: 40, width: 70}} />
         <Button 
           title="Done" 
           style={Styles.Next} textStyle={{color: Colors.yellow}}
-          onPress={() => navigation.navigate('Help')}/>
+          onPress={() => navigation.navigate('Profile')}/>
       </View>
     </View>
   );

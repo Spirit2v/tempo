@@ -44,9 +44,7 @@ const styles = StyleSheet.create({
     width: '100%',
     backgroundColor: Colors.blackBlue,
     flexDirection: 'row',
-    marginTop:20,
     marginBottom:10,
-
     alignItems: 'center',
   },
   Header: {

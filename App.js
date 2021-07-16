@@ -12,19 +12,22 @@ import React from 'react';
 import {
   SafeAreaView,
   ScrollView,
-  StatusBar,
   StyleSheet,
   Text,
   useColorScheme,
   View,
 } from 'react-native';
 import StackNavigator from './Source/Navigation/StackNavigator';
+import StatusBar from './Source/Components/StatusBar';
 
 const App = () => {
   return (
-    <NavigationContainer>
-      <StackNavigator />
-    </NavigationContainer>
+    <>
+      <StatusBar backgroundColor="black" barStyle="light-content" />
+      <NavigationContainer>
+        <StackNavigator />
+      </NavigationContainer>
+    </>
   );
 };
 

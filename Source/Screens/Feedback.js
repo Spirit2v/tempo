@@ -9,11 +9,7 @@ import TextStyles from '../Assets/Styles/TextStyles';
 
 const Feedback = () => {
   return (
-    <ScrollView>
-
-<View style={{    backgroundColor: Colors.darkgrey,
-    marginTop:1,
-    height:710}}>
+    <ScrollView style={{flex: 1, backgroundColor: '#121417'}}>
       <Header_Component Heading="Feedback" />
       <View
         style={[Styles.Aboutus_container, {height: 369, alignItems: 'center',marginTop:-2}]}>
@@ -40,7 +36,6 @@ const Feedback = () => {
         </Text>
         <Text style={[TextStyles.White_text, {margin: 10}]}>Contact Us</Text>
       </View>
-    </View>
 
     </ScrollView>
       );

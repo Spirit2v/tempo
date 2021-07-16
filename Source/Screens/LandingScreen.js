@@ -15,8 +15,6 @@ import Usericonblack from '../Assets/Icons/1.png';
 import Usericonyellow from '../Assets/Icons/2.png';
 import CFlogo from '../Assets/Icons/CFlogo.png';
 import Landingimage from '../Assets/Icons/Landingpageimage.png';
-import SignUp from '../Screens/SignUp';
-import SignIn from '../Components/SignIn_Component';
 const LandingScreen = ({navigation}) => {
   const [screenWidth, setScreenWidth] = useState(null);
   const [screenHeight, setscreenHeight] = useState(null);
@@ -96,7 +94,7 @@ const LandingScreen = ({navigation}) => {
           <TouchableOpacity
             style={{marginBottom: 40}}
             onPress={() => {
-              navigation.navigate('SignIn');
+              navigation.navigate('SignInComponent');
             }}>
             <LandingButtons
               style={Styles.Button2}

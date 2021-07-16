@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, TouchableOpacity} from 'react-native';
+import {View, Text, TouchableOpacity, SafeAreaView} from 'react-native';
 import Styles from '../Assets/Styles/Styles';
 import Header_Component from '../Components/Header_Component';
 import Service_card from '../Components/Service_card';
@@ -14,7 +14,7 @@ import Agents from './Agents';
 
 const Services = ({navigation}) => {
   return (
-    <View style={Styles.Service_container}>
+    <SafeAreaView style={Styles.Service_container}>
       <Header_Component Heading="Services" />
       <TouchableOpacity
         onPress={() => {
@@ -40,7 +40,7 @@ const Services = ({navigation}) => {
         }}>
         <Service_card Icon={C_chemicals} Name="Construction Chemicals" />
       </TouchableOpacity>
-    </View>
+    </SafeAreaView>
   );
 };
 
