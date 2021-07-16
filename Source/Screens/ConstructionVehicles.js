@@ -41,30 +41,89 @@ const ConstructionVehicles = ({navigation}) => {
     <ScrollView> 
        <View style={Styles.Service_container}>
     <Header_Component Heading="ConstructionMaterials" />
-    <Service_card Icon={Dumper} Name="Dumper" />
-        <Service_card
+
+
+<TouchableOpacity>
+<Service_card Icon={Dumper} Name="Dumper" />
+     
+</TouchableOpacity>
+
+
+<TouchableOpacity>
+<Service_card
           Icon={Transmitmixer}
           Name="Transmit Mixer"
         />
-        <Service_card Icon={Crane} Name="Crane" />
-        <Service_card Icon={Crawlercrane} Name="Crawler Crane" />
-        <Service_card
+</TouchableOpacity>
+
+<TouchableOpacity>
+<Service_card Icon={Crane} Name="Crane" />
+</TouchableOpacity>
+
+<TouchableOpacity>
+<Service_card Icon={Crawlercrane} Name="Crawler Crane" />
+</TouchableOpacity>
+
+<TouchableOpacity>
+<Service_card
           Icon={Tyremountedcrane}
           Name="Tyre Mounted Crane"
         />
-        <Service_card Icon={Tipper} Name="Tipper" />
-        <Service_card Icon={Compactor} Name="Compactor" />
-        <Service_card Icon={Excavator} Name="Excavator" />
-        <Service_card Icon={Motorgrader} Name="Motor Grader" />
-        <Service_card Icon={Forklifter} Name="Fork Lifter" />
-        <Service_card Icon={Truck} Name="Truck" />
-        <Service_card Icon={Tractor} Name="Tractor" />
-        <Service_card Icon={Tanker} Name="Tanker" />
-        <Service_card Icon={Roadroller} Name="Road-Roller" />
+</TouchableOpacity>
+
+<TouchableOpacity>
+<Service_card Icon={Tipper} Name="Tipper" />
+</TouchableOpacity>
+<TouchableOpacity>
+<Service_card Icon={Compactor} Name="Compactor" />
+</TouchableOpacity>
+
+<TouchableOpacity>
+<Service_card Icon={Excavator} Name="Excavator" />
+</TouchableOpacity>
+
+<TouchableOpacity>
+<Service_card Icon={Motorgrader} Name="Motor Grader" />
+</TouchableOpacity>
+
+<TouchableOpacity>
+<Service_card Icon={Forklifter} Name="Fork Lifter" />
+</TouchableOpacity>
+
+<TouchableOpacity>
+<Service_card Icon={Truck} Name="Truck" />
+</TouchableOpacity>
+
+<TouchableOpacity>
+<Service_card Icon={Tractor} Name="Tractor" />
+</TouchableOpacity>
+
+
+ 
+      <TouchableOpacity>
+        
+       <Service_card Icon={Tanker} Name="Tanker" />
+       </TouchableOpacity>
+      <TouchableOpacity> 
+         <Service_card Icon={Roadroller} Name="Road-Roller" />
+         </TouchableOpacity>
+      <TouchableOpacity> 
         <Service_card
           Icon={Backhoeloader}
           Name="Back Hoe Holder"
         />
+        
+        </TouchableOpacity>
+       
+       
+        
+      
+       
+       
+        
+    
+      
+       
   </View></ScrollView>
   
   );
