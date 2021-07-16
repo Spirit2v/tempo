@@ -1,5 +1,11 @@
 import React from 'react';
-import {Text, TouchableOpacity,ScrollView,StatusBar, View} from 'react-native';
+import {
+  Text,
+  TouchableOpacity,
+  ScrollView,
+  StatusBar,
+  View,
+} from 'react-native';
 import Styles from '../Assets/Styles/Styles';
 import Main_HeaderComponent from '../Components/Main_HeaderComponent';
 import Profile_card1 from '../Components/Profile_card1';
@@ -14,14 +20,13 @@ import Site_AddressBook from './Site_AddressBook';
 import Help from './Help';
 import About_Us from './About_Us';
 import Feedback from './Feedback';
-import { CommonActions } from '@react-navigation/native';
+import {CommonActions} from '@react-navigation/native';
 
 const Profile = ({navigation}) => {
   return (
     <ScrollView style={Styles.Profile_container}>
       <View style={Styles.Profile_Head}>
-        <View style={{flexDirection: 'row', 
-          alignItems: 'center'}}>
+        <View style={{flexDirection: 'row', alignItems: 'center'}}>
           <Text style={[TextStyles.White_text, {width: 230}]}>
             Please complete your Profile by adding remaining information.
           </Text>
@@ -43,11 +48,7 @@ const Profile = ({navigation}) => {
           )}
         />
       </View>
-      <View
-        style={{ flex: 1,paddingHorizontal:20,marginBottom:10}}>
-     
-     
-     
+      <View style={{flex: 1, paddingHorizontal: 20, marginBottom: 10}}>
         <TouchableOpacity
           onPress={() => {
             navigation.navigate(Profile_Details);
@@ -55,21 +56,25 @@ const Profile = ({navigation}) => {
           <Profile_card1 title="Profile Details" />
         </TouchableOpacity>
         <TouchableOpacity
-       onPress={() => navigation.navigate('Company_Details', {percentage: 33})}>
+          onPress={() =>
+            navigation.navigate('Company_Details', {percentage: 33})
+          }>
           <Profile_card1 title="Company Details" />
         </TouchableOpacity>
         <TouchableOpacity
-         onPress={() => navigation.navigate('Company_Address', {percentage: 66})}>
+          onPress={() =>
+            navigation.navigate('Company_Address', {percentage: 66})
+          }>
           <Profile_card1 title="Company Address" />
         </TouchableOpacity>
-      
+
         <TouchableOpacity
           onPress={() => {
             navigation.navigate('Help');
           }}>
           <Profile_card1 title="Help" />
         </TouchableOpacity>
-       
+
         <TouchableOpacity
           onPress={() => {
             navigation.navigate('About_Us');
@@ -84,17 +89,17 @@ const Profile = ({navigation}) => {
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => {
-            navigation.dispatch(CommonActions.reset({
-              index: 0,
-              routes: [
-                {name: 'LandingScreen'}
-              ]
-            }))
+            navigation.dispatch(
+              CommonActions.reset({
+                index: 0,
+                routes: [{name: 'LandingScreen'}],
+              }),
+            );
           }}>
           <Profile_card1 title="Logout" />
         </TouchableOpacity>
       </View>
-    </ScrollView>   
+    </ScrollView>
   );
 };
 

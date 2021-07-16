@@ -23,8 +23,9 @@ const Services = ({navigation}) => {
         <Service_card Icon={C_materials} Name="Construction Materials" />
       </TouchableOpacity>
       <TouchableOpacity
-         onPress={() => {
-          navigation.navigate(Agents)}}>
+        onPress={() => {
+          navigation.navigate(Agents);
+        }}>
         <Service_card Icon={C_agents} Name="Agents" />
       </TouchableOpacity>
       <TouchableOpacity

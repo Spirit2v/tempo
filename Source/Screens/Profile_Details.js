@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text } from 'react-native';
+import {View, Text} from 'react-native';
 import Styles from '../Assets/Styles/Styles';
 import Header_Component from '../Components/Header_Component';
 import ProgressBar from 'react-native-progress/Bar';
@@ -10,7 +10,12 @@ import Button from '../Components/Button';
 const Profile_Details = ({navigation, percentage = 0}) => {
   return (
     <View style={Styles.ProfileDetails_container}>
-      <Text style={{color: 'white', alignSelf: 'flex-start', paddingLeft: 15}}>{`${percentage}% completed`}</Text>
+      <Text
+        style={{
+          color: 'white',
+          alignSelf: 'flex-start',
+          paddingLeft: 15,
+        }}>{`${percentage}% completed`}</Text>
       <ProgressBar
         unfilledColor="#6d6e70"
         color={Colors.yellow}
@@ -20,7 +25,7 @@ const Profile_Details = ({navigation, percentage = 0}) => {
         borderWidth={0}
         style={{margin: 20}}
       />
-      <Profile_TextinputCard placeholder="Name"/>
+      <Profile_TextinputCard placeholder="Name" />
       <Profile_TextinputCard placeholder="Email ID" />
       <Profile_TextinputCard placeholder="Phone No." />
       <Profile_TextinputCard placeholder="Whatsapp No." />
@@ -34,14 +39,19 @@ const Profile_Details = ({navigation, percentage = 0}) => {
           position: 'absolute',
           bottom: 70,
         }}>
-        <Button title="Save" 
-          style={{height: 40, width: 70}} 
+        <Button
+          title="Save"
+          style={{height: 40, width: 70}}
           textStyle={{color: Colors.blackBlue}}
         />
-        <Button 
-          title="Next" 
-          style={Styles.Next} textStyle={{color: Colors.yellow}}
-          onPress={() => navigation.navigate('Company_Details', {percentage: 33})}/>
+        <Button
+          title="Next"
+          style={Styles.Next}
+          textStyle={{color: Colors.yellow}}
+          onPress={() =>
+            navigation.navigate('Company_Details', {percentage: 33})
+          }
+        />
       </View>
     </View>
   );
