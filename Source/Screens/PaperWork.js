@@ -1,22 +1,29 @@
 import React from 'react';
 import {View, Text} from 'react-native';
+import Styles from '../Assets/Styles/Styles';
+import Button from '../Components/Button';
 
-export default function PaperWork() {
+import PaperWorkButton from '../Components/PaperWorkButton';
+export default function PaperWork({navigation}) {
   return (
     <View style={Styles.ProfileDetails_container}>
       <View style={{marginBottom: 20}}></View>
 
-      <PaperWorkButton value={false} text="With Driver" />
+      <PaperWorkButton value={false} text="Pollution Check" />
 
-      <PaperWorkButton text="With Driver" />
+      <PaperWorkButton text="RC" />
 
-      <PaperWorkButton value={true} text="With Driver" />
+      <PaperWorkButton  text="Permit" />
 
-      <PaperWorkButton value={true} text="With Driver" />
-
+      <PaperWorkButton text="Road Taxes Document" />
       <View style={{marginBottom: 20}}></View>
+<View
+style={{justifyContent:'center',alignItems:'center',marginTop:12}}
 
-      <Button title="Continue" />
+>
+<Button title="Continue" />
+</View>
+   
     </View>
   );
 }

@@ -40,74 +40,105 @@ const ConstructionVehicles = ({navigation}) => {
   return (
     <ScrollView> 
        <View style={Styles.Service_container}>
-    <Header_Component Heading="ConstructionMaterials" />
+    <Header_Component Heading="ConstructionVehicle" />
 
 
-<TouchableOpacity>
+<TouchableOpacity
+onPress={()=>navigation.navigate('Dumper')}
+>
 <Service_card Icon={Dumper} Name="Dumper" />
      
 </TouchableOpacity>
 
 
-<TouchableOpacity>
+<TouchableOpacity
+onPress={()=>navigation.navigate('TransitMixture')}
+>
 <Service_card
           Icon={Transmitmixer}
           Name="Transmit Mixer"
         />
 </TouchableOpacity>
 
-<TouchableOpacity>
+<TouchableOpacity
+onPress={()=>navigation.navigate('Crane')}
+>
 <Service_card Icon={Crane} Name="Crane" />
 </TouchableOpacity>
 
-<TouchableOpacity>
+<TouchableOpacity
+
+onPress={()=>navigation.navigate('CrawlerCrane')}
+>
 <Service_card Icon={Crawlercrane} Name="Crawler Crane" />
 </TouchableOpacity>
 
-<TouchableOpacity>
+<TouchableOpacity
+onPress={()=>navigation.navigate('TyreMountedCrane')}
+>
 <Service_card
           Icon={Tyremountedcrane}
           Name="Tyre Mounted Crane"
         />
 </TouchableOpacity>
 
-<TouchableOpacity>
+<TouchableOpacity
+onPress={()=>navigation.navigate('Tipper')}
+>
 <Service_card Icon={Tipper} Name="Tipper" />
 </TouchableOpacity>
-<TouchableOpacity>
+<TouchableOpacity
+onPress={()=>navigation.navigate('Compactor')}
+>
 <Service_card Icon={Compactor} Name="Compactor" />
 </TouchableOpacity>
 
-<TouchableOpacity>
+<TouchableOpacity
+onPress={()=>navigation.navigate('Excavator')}
+>
 <Service_card Icon={Excavator} Name="Excavator" />
 </TouchableOpacity>
 
-<TouchableOpacity>
+<TouchableOpacity
+onPress={()=>navigation.navigate('MotorGrader')}
+>
 <Service_card Icon={Motorgrader} Name="Motor Grader" />
 </TouchableOpacity>
 
-<TouchableOpacity>
+<TouchableOpacity
+onPress={()=>navigation.navigate('Forklift')}
+>
 <Service_card Icon={Forklifter} Name="Fork Lifter" />
 </TouchableOpacity>
 
-<TouchableOpacity>
+<TouchableOpacity
+onPress={()=>navigation.navigate('Truck')}
+>
 <Service_card Icon={Truck} Name="Truck" />
 </TouchableOpacity>
 
-<TouchableOpacity>
+<TouchableOpacity
+onPress={()=>navigation.navigate('Tractor')}
+>
 <Service_card Icon={Tractor} Name="Tractor" />
 </TouchableOpacity>
 
 
  
-      <TouchableOpacity>
+      <TouchableOpacity
+      onPress={()=>navigation.navigate('Tanker')}
+      >
         
        <Service_card Icon={Tanker} Name="Tanker" />
        </TouchableOpacity>
-      <TouchableOpacity> 
+      <TouchableOpacity
+      
+      > 
          <Service_card Icon={Roadroller} Name="Road-Roller" />
          </TouchableOpacity>
-      <TouchableOpacity> 
+      <TouchableOpacity
+      onPress={()=>navigation.navigate('BackHoeLoader')}
+      > 
         <Service_card
           Icon={Backhoeloader}
           Name="Back Hoe Holder"

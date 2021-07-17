@@ -1,28 +1,31 @@
 import React from 'react';
-import {TextInput, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 import Colors from '../Utils/Colors';
 import TextStyles from '../Assets/Styles/TextStyles';
+import Arrow_button from './Arrow_button';
 
-const Profile_TextinputCard = ({placeholder}) => {
+const DumperCard = ({title}) => {
   return (
-    <TextInput
-      placeholder={placeholder}
-      placeholderTextColor={Colors.white}
-      style={styles.Box}></TextInput>
+    <View style={styles.Box}>
+      <Text style={TextStyles.White_text}>{title}</Text>
+      <Arrow_button />
+    </View>
   );
 };
 
-export default Profile_TextinputCard;
+export default DumperCard;
 
 const styles = StyleSheet.create({
   Box: {
-    height: 40,
+    width: '100%',
+    height: 49,
     backgroundColor: Colors.blackBlue,
-    borderRadius: 10,
+    borderRadius: 9,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    padding: 10,
+    paddingHorizontal: 10,
+    
     shadowColor: Colors.grey,
     shadowOffset: {
       width: 0,
@@ -30,9 +33,8 @@ const styles = StyleSheet.create({
     },
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
-    color: 'grey',
+
     elevation: 5,
-    fontFamily: 'Open Sans',
-    marginVertical: 7,
+    marginBottom:20
   },
 });

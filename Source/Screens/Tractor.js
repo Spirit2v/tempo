@@ -1,17 +1,28 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, TouchableOpacity} from 'react-native';
+import DumperCard from '../Components/DumperCard';
 import Styles from '../Assets/Styles/Styles';
-import Profile_card from '../Components/Profile_card';
-export default function Tractor() {
+export default function Tractor({navigation}) {
   return (
-    <View style={Styles.ProfileDetails_container1}>
-      <View style={{marginBottom: 20}}></View>
-
-      <View style={{marginBottom: 40}}>
-        <Profile_card title="Basic Information" />
-
-        <Profile_card title="Paper Work" />
-        <Profile_card title="Renting Detail" />
+    <View>
+      <View style={Styles.ProfileDetails_container}>
+        <View style={{marginTop: 10, padding: 10}}>
+          <TouchableOpacity
+          onPress={()=>navigation.navigate('BasicInformation')}
+          >
+            <DumperCard title="Basic Information" />
+          </TouchableOpacity>
+          <TouchableOpacity
+           onPress={()=>navigation.navigate('PaperWork')}
+          >
+            <DumperCard title="Paper Work" />
+          </TouchableOpacity>
+          <TouchableOpacity
+  onPress={()=>navigation.navigate('RentingDetail')}
+          >
+            <DumperCard title="Renting Detail" />
+          </TouchableOpacity>
+        </View>
       </View>
     </View>
   );

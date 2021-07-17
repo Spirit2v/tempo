@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
 import DumperCard from '../Components/DumperCard';
 import Styles from '../Assets/Styles/Styles';
-export default function Dumper({navigation}) {
+export default function Crane({navigation}) {
   return (
     <View>
       <View style={Styles.ProfileDetails_container}>

@@ -28,11 +28,23 @@ import Pipes from '../Screens/Pipes';
 import PaintAndPutty from '../Screens/PaintAndPutty';
 import Dumper from '../Screens/Dumper';
 import Sand from '../Screens/Sand';
-
+import BasicInformation from '../Screens/BasicInformation';
 import PitchLeadScreen from '../Screens/PitchLeadScreen';
 import LeadsScreen from '../Screens/LeadsScreen';
-
-
+import PaperWork from '../Screens/PaperWork';
+import Transmitmixer from '../Screens/TransitMixture';
+import Crane from '../Screens/Crane';
+import CrawlerCrane from '../Screens/CrawlerCrane';
+import TyreMountedCrane from '../Screens/TyreMountedCrane';
+import Tipper from '../Screens/Tipper';
+import Compactor from '../Screens/Compactor';
+import Roller from '../Screens/Roller';
+import Tanker from '../Screens/Tanker';
+import Forklift from '../Screens/Forklift';
+import BackhoeLoader from '../Screens/BackhoeLoader';
+import Excavator from '../Screens/Excavator';
+import Truck from '../Screens/Truck';
+import MotorGrader from '../Screens/MotorGrader';
 const Tab = createBottomTabNavigator();
 
 const HomeStack = createStackNavigator();
@@ -192,6 +204,16 @@ function Dashbard() {
           headerTintColor: Colors.yellow,
         }}
       />
+
+<DashboardStack.Screen
+        name="TyreMountedCrane"
+        component={TyreMountedCrane}
+        options={{
+          headerTitle: 'Tyre Mounted Crane',
+          headerStyle: {backgroundColor: 'black'},
+          headerTintColor: Colors.yellow,
+        }}
+      />
       <DashboardStack.Screen
         name="Agents"
         component={Agents}
@@ -201,11 +223,52 @@ function Dashbard() {
           headerTintColor: Colors.yellow,
         }}
       />
+
+<DashboardStack.Screen
+        name="Tipper"
+        component={Tipper}
+        options={{
+          headerTitle: 'Tipper',
+          headerStyle: {backgroundColor: 'black'},
+          headerTintColor: Colors.yellow,
+        }}
+      />
+
+
+   <DashboardStack.Screen
+        name="TransitMixture"
+        component={Transmitmixer}
+        options={{
+          headerTitle: 'Transit Mixture',
+          headerStyle: {backgroundColor: 'black'},
+          headerTintColor: Colors.yellow,
+        }}
+      />
+
          <DashboardStack.Screen
         name="Sand"
         component={Sand}
         options={{
           headerTitle: 'Sand',
+          headerStyle: {backgroundColor: 'black'},
+          headerTintColor: Colors.yellow,
+        }}
+      />
+      
+      <DashboardStack.Screen
+        name="Crane"
+        component={Crane}
+        options={{
+          headerTitle: 'Crane',
+          headerStyle: {backgroundColor: 'black'},
+          headerTintColor: Colors.yellow,
+        }}
+      />
+            <DashboardStack.Screen
+        name="CrawlerCrane"
+        component={CrawlerCrane}
+        options={{
+          headerTitle: 'Crawler Crane',
           headerStyle: {backgroundColor: 'black'},
           headerTintColor: Colors.yellow,
         }}
@@ -263,6 +326,13 @@ function Dashbard() {
           headerTitle: 'TMT Steel & Iron', 
           headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
         />
+                      <DashboardStack.Screen 
+        name="BasicInformation" 
+        component={BasicInformation} 
+        options={{
+          headerTitle: 'Basic Information', 
+          headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
+        />
                 <DashboardStack.Screen 
         name="MarbleAndTiles" 
         component={MarbleAndTiles} 
@@ -284,11 +354,95 @@ function Dashbard() {
           headerTitle: 'Paint & Putty', 
           headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
         />
+
+<DashboardStack.Screen 
+        name="PaperWork" 
+        component={PaperWork} 
+        options={{
+          headerTitle: 'Paper Work', 
+          headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
+        />
+      <DashboardStack.Screen
+        name="Compactor"
+        component={Compactor}
+        options={{
+          headerTitle: 'Compactor',
+          headerStyle: {backgroundColor: 'black'},
+          headerTintColor: Colors.yellow,
+        }}
+      />
+
+            <DashboardStack.Screen
+        name="Roller"
+        component={Roller}
+        options={{
+          headerTitle: 'Roller',
+          headerStyle: {backgroundColor: 'black'},
+          headerTintColor: Colors.yellow,
+        }}
+      />
+            <DashboardStack.Screen
+        name="Tanker"
+        component={Tanker}
+        options={{
+          headerTitle: 'Tanker',
+          headerStyle: {backgroundColor: 'black'},
+          headerTintColor: Colors.yellow,
+        }}
+      />
+            <DashboardStack.Screen
+        name="Forklift"
+        component={Forklift}
+        options={{
+          headerTitle: 'ForkLift',
+          headerStyle: {backgroundColor: 'black'},
+          headerTintColor: Colors.yellow,
+        }}
+      />
+<DashboardStack.Screen
+        name="BackHoeLoader"
+        component={BackhoeLoader}
+        options={{
+          headerTitle: 'Backhoe Loader',
+          headerStyle: {backgroundColor: 'black'},
+          headerTintColor: Colors.yellow,
+        }}
+      />
+<DashboardStack.Screen
+        name="Excavator"
+        component={Excavator}
+        options={{
+          headerTitle: 'Excavator',
+          headerStyle: {backgroundColor: 'black'},
+          headerTintColor: Colors.yellow,
+        }}
+      />
+
+
+
                  <DashboardStack.Screen 
         name="Dumper" 
         component={Dumper} 
         options={{
           headerTitle: 'Dumper', 
+          headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
+        />
+
+
+<DashboardStack.Screen 
+        name="Truck" 
+        component={Truck} 
+        options={{
+          headerTitle: 'Truck', 
+          headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
+        />
+
+
+<DashboardStack.Screen 
+        name="MotorGrader" 
+        component={MotorGrader} 
+        options={{
+          headerTitle: 'MotorGrader', 
           headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
         />
         
@@ -322,6 +476,7 @@ function Profile() {
           headerTintColor: Colors.yellow,
         }}
       />
+
       <ProfileStack.Screen
         name="Company_Address"
         component={Company_Address}
