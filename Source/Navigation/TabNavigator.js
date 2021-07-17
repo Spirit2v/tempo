@@ -46,6 +46,14 @@ import Excavator from '../Screens/Excavator';
 import Truck from '../Screens/Truck';
 import MotorGrader from '../Screens/MotorGrader';
 import NewLeadScreen from '../Screens/Leads/NewLeadTabScreen';
+import Waterproofing from '../Screens/Waterproofing';
+import ConcreteAdmixture from '../Screens/ConcreteAdmixture';
+import SurfaceTreatments from '../Screens/SurfaceTreatments';
+import GroutsAndAnchor from '../Screens/GroutsAndAnchor';
+import ConcreteRepair from '../Screens/ConcreteRepair';
+import Sealant from '../Screens/Sealant';
+import Flooring from '../Screens/Flooring';
+import Tiling from '../Screens/Tiling';
 const Tab = createBottomTabNavigator();
 
 const HomeStack = createStackNavigator();
@@ -451,6 +459,84 @@ function Dashbard() {
           headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
         />
         
+
+
+
+
+
+
+        <DashboardStack.Screen 
+        name="ConcreteAdmixture" 
+        component={ConcreteAdmixture} 
+        options={{
+          headerTitle: 'Concrete Admixture', 
+          headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
+        />
+        
+        
+<DashboardStack.Screen 
+        name="Waterproofing" 
+        component={Waterproofing} 
+        options={{
+          headerTitle: 'Waterproofing', 
+          headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
+        />
+        
+        
+<DashboardStack.Screen 
+        name="SurfaceTreatments" 
+        component={SurfaceTreatments} 
+        options={{
+          headerTitle: 'Surface Treatment', 
+          headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
+        />
+        
+        
+<DashboardStack.Screen 
+        name="GroutsAndAnchor" 
+        component={GroutsAndAnchor} 
+        options={{
+          headerTitle: 'Grouts & Anchor', 
+          headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
+        />
+        
+        
+<DashboardStack.Screen 
+        name="ConcreteRepair" 
+        component={ConcreteRepair} 
+        options={{
+          headerTitle: 'Concrete Repair', 
+          headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
+        />
+        
+        
+<DashboardStack.Screen 
+        name="Sealant" 
+        component={Sealant} 
+        options={{
+          headerTitle: 'Sealant', 
+          headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
+        />
+        
+        
+<DashboardStack.Screen 
+        name="Flooring" 
+        component={Flooring} 
+        options={{
+          headerTitle: 'Flooring', 
+          headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
+        />
+        <DashboardStack.Screen 
+        name="Tiling" 
+        component={Tiling} 
+        options={{
+          headerTitle: 'Tiling', 
+          headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
+        />
+
+
+
+
     </DashboardStack.Navigator>
   );
 }

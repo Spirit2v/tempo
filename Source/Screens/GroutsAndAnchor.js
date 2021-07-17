@@ -6,7 +6,7 @@ import Button from '../Components/Button';
 import Buttonq from '../Components/Buttonq';
 import Buttonq1 from '../Components/Buttonq1';
 import ServiceCardSand from '../Components/ServiceCardSand';
-export default function Tiling({navigation}) {
+export default function GroutsAndAnchor({navigation}) {
   return (
     <View style={Styles.ProfileDetails_container}>
       <View style={{marginTop: 8, paddingHorizontal: 7}}>
