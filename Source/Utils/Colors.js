@@ -7,4 +7,6 @@ export default {
   darkgrey: '#121417',
   background: '#636363',
   lightgrey: 'lightgrey',
+  lightred: '#ED4F4F',
+  lightgreen: '#4FED5F'
 };

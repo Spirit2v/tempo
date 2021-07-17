@@ -32,8 +32,9 @@ const Dashboard = ({navigation}) => {
         <TouchableOpacity onPress={() => navigation.navigate('Services')}>
           <Profile_card title="Service" />
         </TouchableOpacity>
-        <TouchableOpacity>
-          <Profile_card title="Lead" />
+        <TouchableOpacity 
+              onPress={() => navigation.navigate('Leads')}>
+              <Profile_card title="Lead" />
         </TouchableOpacity>
         <TouchableOpacity onPress={() => navigation.navigate('Tractor')}>
           <Profile_card title="Dashboard" />

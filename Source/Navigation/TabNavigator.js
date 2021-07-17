@@ -29,6 +29,10 @@ import PaintAndPutty from '../Screens/PaintAndPutty';
 import Dumper from '../Screens/Dumper';
 import Sand from '../Screens/Sand';
 
+import PitchLeadScreen from '../Screens/PitchLeadScreen';
+import LeadsScreen from '../Screens/LeadsScreen';
+
+
 const Tab = createBottomTabNavigator();
 
 const HomeStack = createStackNavigator();
@@ -168,13 +172,18 @@ function Dashbard() {
   return (
     <DashboardStack.Navigator screenOptions={dashbardHeaderOptions}>
       <DashboardStack.Screen name="Dashbard" component={DashboardScreen} />
-      <HomeStack.Screen
+      <DashboardStack.Screen name="PitchLead" component={PitchLeadScreen}/>
+      <DashboardStack.Screen 
+        name="Leads" 
+        component={LeadsScreen} 
+        options={{headerShown: false}}/>
+      <DashboardStack.Screen
         name="NotificationTab"
         component={NotificationTab}
         options={{headerShown: false}}
       />
 
-      <ProfileStack.Screen
+      <DashboardStack.Screen
         name="RentingDetail"
         component={RentingDetail}
         options={{
@@ -183,7 +192,7 @@ function Dashbard() {
           headerTintColor: Colors.yellow,
         }}
       />
-      <ProfileStack.Screen
+      <DashboardStack.Screen
         name="Agents"
         component={Agents}
         options={{
@@ -192,7 +201,7 @@ function Dashbard() {
           headerTintColor: Colors.yellow,
         }}
       />
-         <ProfileStack.Screen
+         <DashboardStack.Screen
         name="Sand"
         component={Sand}
         options={{
@@ -201,7 +210,7 @@ function Dashbard() {
           headerTintColor: Colors.yellow,
         }}
       />
-      <ProfileStack.Screen
+      <DashboardStack.Screen
         name="Tractor"
         component={Tractor}
         options={{
@@ -211,7 +220,7 @@ function Dashbard() {
         }}
       />
 
-      <ProfileStack.Screen
+      <DashboardStack.Screen
         name="BricksAndBlock"
         component={BricksAndBlock}
         options={{
@@ -220,7 +229,7 @@ function Dashbard() {
           headerTintColor: Colors.yellow,
         }}
       />
-      <ProfileStack.Screen
+      <DashboardStack.Screen
         name="Stones"
         component={Stones}
         options={{
@@ -229,7 +238,7 @@ function Dashbard() {
           headerTintColor: Colors.yellow,
         }}
       />
-      <ProfileStack.Screen
+      <DashboardStack.Screen
         name="Cement"
         component={Cement}
         options={{
@@ -238,7 +247,7 @@ function Dashbard() {
           headerTintColor: Colors.yellow,
         }}
       />
-      <ProfileStack.Screen
+      <DashboardStack.Screen
         name="RMCmixture"
         component={RMCmixture}
         options={{
@@ -247,35 +256,35 @@ function Dashbard() {
           headerTintColor: Colors.yellow,
         }}
       />
-              <ProfileStack.Screen 
+              <DashboardStack.Screen 
         name="TMTsteel" 
         component={TMTsteel} 
         options={{
           headerTitle: 'TMT Steel & Iron', 
           headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
         />
-                <ProfileStack.Screen 
+                <DashboardStack.Screen 
         name="MarbleAndTiles" 
         component={MarbleAndTiles} 
         options={{
           headerTitle: 'Marble & tiles', 
           headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
         />
-                <ProfileStack.Screen 
+                <DashboardStack.Screen 
         name="Pipes" 
         component={Pipes} 
         options={{
           headerTitle: 'Pipes', 
           headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
         />
-         <ProfileStack.Screen 
+         <DashboardStack.Screen 
         name="PaintAndPutty" 
         component={PaintAndPutty} 
         options={{
           headerTitle: 'Paint & Putty', 
           headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
         />
-                 <ProfileStack.Screen 
+                 <DashboardStack.Screen 
         name="Dumper" 
         component={Dumper} 
         options={{
