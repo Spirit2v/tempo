@@ -28,7 +28,6 @@ import Pipes from '../Screens/Pipes';
 import PaintAndPutty from '../Screens/PaintAndPutty';
 import Dumper from '../Screens/Dumper';
 import Sand from '../Screens/Sand';
-<<<<<<< HEAD
 import BasicInformation from '../Screens/BasicInformation';
 import PitchLeadScreen from '../Screens/PitchLeadScreen';
 import LeadsScreen from '../Screens/LeadsScreen';
@@ -46,12 +45,7 @@ import BackhoeLoader from '../Screens/BackhoeLoader';
 import Excavator from '../Screens/Excavator';
 import Truck from '../Screens/Truck';
 import MotorGrader from '../Screens/MotorGrader';
-=======
-import PitchLeadScreen from '../Screens/PitchLeadScreen';
-import LeadsScreen from '../Screens/LeadsScreen';
-import NewLeadsScreen from '../Screens/NewLeadsScreen';
-
->>>>>>> eae10b502216a3982360a011aff3673b5e6ab710
+import NewLeadScreen from '../Screens/Leads/NewLeadTabScreen';
 const Tab = createBottomTabNavigator();
 
 const HomeStack = createStackNavigator();
@@ -194,7 +188,8 @@ function Dashbard() {
       screenOptions={dashbardHeaderOptions}>
       <DashboardStack.Screen name="Dashboard" component={DashboardScreen} />
       <DashboardStack.Screen name="PitchLead" component={PitchLeadScreen}/>
-      <DashboardStack.Screen name="NewLeads" component={NewLeadsScreen} options={{headerShown: false}}/>
+      <DashboardStack.Screen name="NewLeads" 
+      component={NewLeadScreen} options={{headerShown: false}}/>
       <DashboardStack.Screen 
         name="Leads" 
         component={LeadsScreen} 
