@@ -32,11 +32,10 @@ const Dashboard = ({navigation}) => {
         <TouchableOpacity onPress={() => navigation.navigate('Services')}>
           <Profile_card title="Service" />
         </TouchableOpacity>
-        <TouchableOpacity 
-              onPress={() => navigation.navigate('Leads')}>
-              <Profile_card title="Lead" />
+        <TouchableOpacity onPress={() => navigation.navigate('Leads')}>
+          <Profile_card title="Lead" />
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => navigation.navigate('Tractor')}>
+        <TouchableOpacity onPress={() => navigation.navigate('DashboardDash')}>
           <Profile_card title="Dashboard" />
         </TouchableOpacity>
       </View>
@@ -48,7 +47,7 @@ const Dashboard = ({navigation}) => {
           padding: 4,
           borderBottomWidth: 1,
           borderColor: 'grey',
-          marginHorizontal: 20
+          marginHorizontal: 20,
         }}>
         <Text style={{fontSize: 18, color: 'white'}}>New Leads</Text>
         <Text style={{fontSize: 16, color: '#ffb600'}}>View all</Text>
@@ -64,7 +63,7 @@ const Dashboard = ({navigation}) => {
           padding: 4,
           borderBottomWidth: 1,
           borderColor: 'grey',
-          marginHorizontal: 20
+          marginHorizontal: 20,
         }}>
         <Text style={{fontSize: 18, color: 'white'}}>Pitched Lead</Text>
         <Text style={{fontSize: 16, color: '#ffb600'}}>View all</Text>

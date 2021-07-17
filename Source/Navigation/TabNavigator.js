@@ -54,6 +54,7 @@ import ConcreteRepair from '../Screens/ConcreteRepair';
 import Sealant from '../Screens/Sealant';
 import Flooring from '../Screens/Flooring';
 import Tiling from '../Screens/Tiling';
+import DashboardDash from '../Screens/DashboardDash';
 const Tab = createBottomTabNavigator();
 
 const HomeStack = createStackNavigator();
@@ -191,22 +192,38 @@ function Home() {
 
 function Dashbard() {
   return (
-    <DashboardStack.Navigator 
+    <DashboardStack.Navigator
       initialRouteName="Dashboard"
       screenOptions={dashbardHeaderOptions}>
       <DashboardStack.Screen name="Dashboard" component={DashboardScreen} />
-      <DashboardStack.Screen name="PitchLead" component={PitchLeadScreen}/>
-      <DashboardStack.Screen name="NewLeads" 
-      component={NewLeadScreen} options={{headerShown: false}}/>
-      <DashboardStack.Screen 
-        name="Leads" 
-        component={LeadsScreen} 
-        options={{headerShown: false}}/>
+      <DashboardStack.Screen name="PitchLead" component={PitchLeadScreen} />
+      <DashboardStack.Screen
+        name="NewLeads"
+        component={NewLeadScreen}
+        options={{headerShown: false}}
+      />
+      <DashboardStack.Screen
+        name="Leads"
+        component={LeadsScreen}
+        options={{headerShown: false}}
+      />
       <DashboardStack.Screen
         name="NotificationTab"
         component={NotificationTab}
         options={{headerShown: false}}
       />
+
+
+<DashboardStack.Screen
+        name="DashboardDash"
+        component={DashboardDash}
+        options={{
+          headerTitle: 'Dashboard',
+          headerStyle: {backgroundColor: 'black'},
+          headerTintColor: Colors.yellow,
+        }}
+      />
+
 
       <DashboardStack.Screen
         name="RentingDetail"
@@ -218,7 +235,7 @@ function Dashbard() {
         }}
       />
 
-<DashboardStack.Screen
+      <DashboardStack.Screen
         name="TyreMountedCrane"
         component={TyreMountedCrane}
         options={{
@@ -237,7 +254,7 @@ function Dashbard() {
         }}
       />
 
-<DashboardStack.Screen
+      <DashboardStack.Screen
         name="Tipper"
         component={Tipper}
         options={{
@@ -247,8 +264,7 @@ function Dashbard() {
         }}
       />
 
-
-   <DashboardStack.Screen
+      <DashboardStack.Screen
         name="TransitMixture"
         component={Transmitmixer}
         options={{
@@ -258,7 +274,7 @@ function Dashbard() {
         }}
       />
 
-         <DashboardStack.Screen
+      <DashboardStack.Screen
         name="Sand"
         component={Sand}
         options={{
@@ -267,7 +283,7 @@ function Dashbard() {
           headerTintColor: Colors.yellow,
         }}
       />
-      
+
       <DashboardStack.Screen
         name="Crane"
         component={Crane}
@@ -277,7 +293,7 @@ function Dashbard() {
           headerTintColor: Colors.yellow,
         }}
       />
-            <DashboardStack.Screen
+      <DashboardStack.Screen
         name="CrawlerCrane"
         component={CrawlerCrane}
         options={{
@@ -332,49 +348,61 @@ function Dashbard() {
           headerTintColor: Colors.yellow,
         }}
       />
-              <DashboardStack.Screen 
-        name="TMTsteel" 
-        component={TMTsteel} 
+      <DashboardStack.Screen
+        name="TMTsteel"
+        component={TMTsteel}
         options={{
-          headerTitle: 'TMT Steel & Iron', 
-          headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
-        />
-                      <DashboardStack.Screen 
-        name="BasicInformation" 
-        component={BasicInformation} 
+          headerTitle: 'TMT Steel & Iron',
+          headerStyle: {backgroundColor: 'black'},
+          headerTintColor: Colors.yellow,
+        }}
+      />
+      <DashboardStack.Screen
+        name="BasicInformation"
+        component={BasicInformation}
         options={{
-          headerTitle: 'Basic Information', 
-          headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
-        />
-                <DashboardStack.Screen 
-        name="MarbleAndTiles" 
-        component={MarbleAndTiles} 
+          headerTitle: 'Basic Information',
+          headerStyle: {backgroundColor: 'black'},
+          headerTintColor: Colors.yellow,
+        }}
+      />
+      <DashboardStack.Screen
+        name="MarbleAndTiles"
+        component={MarbleAndTiles}
         options={{
-          headerTitle: 'Marble & tiles', 
-          headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
-        />
-                <DashboardStack.Screen 
-        name="Pipes" 
-        component={Pipes} 
+          headerTitle: 'Marble & tiles',
+          headerStyle: {backgroundColor: 'black'},
+          headerTintColor: Colors.yellow,
+        }}
+      />
+      <DashboardStack.Screen
+        name="Pipes"
+        component={Pipes}
         options={{
-          headerTitle: 'Pipes', 
-          headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
-        />
-         <DashboardStack.Screen 
-        name="PaintAndPutty" 
-        component={PaintAndPutty} 
+          headerTitle: 'Pipes',
+          headerStyle: {backgroundColor: 'black'},
+          headerTintColor: Colors.yellow,
+        }}
+      />
+      <DashboardStack.Screen
+        name="PaintAndPutty"
+        component={PaintAndPutty}
         options={{
-          headerTitle: 'Paint & Putty', 
-          headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
-        />
+          headerTitle: 'Paint & Putty',
+          headerStyle: {backgroundColor: 'black'},
+          headerTintColor: Colors.yellow,
+        }}
+      />
 
-<DashboardStack.Screen 
-        name="PaperWork" 
-        component={PaperWork} 
+      <DashboardStack.Screen
+        name="PaperWork"
+        component={PaperWork}
         options={{
-          headerTitle: 'Paper Work', 
-          headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
-        />
+          headerTitle: 'Paper Work',
+          headerStyle: {backgroundColor: 'black'},
+          headerTintColor: Colors.yellow,
+        }}
+      />
       <DashboardStack.Screen
         name="Compactor"
         component={Compactor}
@@ -385,7 +413,7 @@ function Dashbard() {
         }}
       />
 
-            <DashboardStack.Screen
+      <DashboardStack.Screen
         name="Roller"
         component={Roller}
         options={{
@@ -394,7 +422,7 @@ function Dashbard() {
           headerTintColor: Colors.yellow,
         }}
       />
-            <DashboardStack.Screen
+      <DashboardStack.Screen
         name="Tanker"
         component={Tanker}
         options={{
@@ -403,7 +431,7 @@ function Dashbard() {
           headerTintColor: Colors.yellow,
         }}
       />
-            <DashboardStack.Screen
+      <DashboardStack.Screen
         name="Forklift"
         component={Forklift}
         options={{
@@ -412,7 +440,7 @@ function Dashbard() {
           headerTintColor: Colors.yellow,
         }}
       />
-<DashboardStack.Screen
+      <DashboardStack.Screen
         name="BackHoeLoader"
         component={BackhoeLoader}
         options={{
@@ -421,7 +449,7 @@ function Dashbard() {
           headerTintColor: Colors.yellow,
         }}
       />
-<DashboardStack.Screen
+      <DashboardStack.Screen
         name="Excavator"
         component={Excavator}
         options={{
@@ -431,112 +459,114 @@ function Dashbard() {
         }}
       />
 
-
-
-                 <DashboardStack.Screen 
-        name="Dumper" 
-        component={Dumper} 
+      <DashboardStack.Screen
+        name="Dumper"
+        component={Dumper}
         options={{
-          headerTitle: 'Dumper', 
-          headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
-        />
+          headerTitle: 'Dumper',
+          headerStyle: {backgroundColor: 'black'},
+          headerTintColor: Colors.yellow,
+        }}
+      />
 
-
-<DashboardStack.Screen 
-        name="Truck" 
-        component={Truck} 
+      <DashboardStack.Screen
+        name="Truck"
+        component={Truck}
         options={{
-          headerTitle: 'Truck', 
-          headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
-        />
+          headerTitle: 'Truck',
+          headerStyle: {backgroundColor: 'black'},
+          headerTintColor: Colors.yellow,
+        }}
+      />
 
-
-<DashboardStack.Screen 
-        name="MotorGrader" 
-        component={MotorGrader} 
+      <DashboardStack.Screen
+        name="MotorGrader"
+        component={MotorGrader}
         options={{
-          headerTitle: 'MotorGrader', 
-          headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
-        />
-        
+          headerTitle: 'MotorGrader',
+          headerStyle: {backgroundColor: 'black'},
+          headerTintColor: Colors.yellow,
+        }}
+      />
 
-
-
-
-
-
-        <DashboardStack.Screen 
-        name="ConcreteAdmixture" 
-        component={ConcreteAdmixture} 
+      <DashboardStack.Screen
+        name="ConcreteAdmixture"
+        component={ConcreteAdmixture}
         options={{
-          headerTitle: 'Concrete Admixture', 
-          headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
-        />
-        
-        
-<DashboardStack.Screen 
-        name="Waterproofing" 
-        component={Waterproofing} 
-        options={{
-          headerTitle: 'Waterproofing', 
-          headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
-        />
-        
-        
-<DashboardStack.Screen 
-        name="SurfaceTreatments" 
-        component={SurfaceTreatments} 
-        options={{
-          headerTitle: 'Surface Treatment', 
-          headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
-        />
-        
-        
-<DashboardStack.Screen 
-        name="GroutsAndAnchor" 
-        component={GroutsAndAnchor} 
-        options={{
-          headerTitle: 'Grouts & Anchor', 
-          headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
-        />
-        
-        
-<DashboardStack.Screen 
-        name="ConcreteRepair" 
-        component={ConcreteRepair} 
-        options={{
-          headerTitle: 'Concrete Repair', 
-          headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
-        />
-        
-        
-<DashboardStack.Screen 
-        name="Sealant" 
-        component={Sealant} 
-        options={{
-          headerTitle: 'Sealant', 
-          headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
-        />
-        
-        
-<DashboardStack.Screen 
-        name="Flooring" 
-        component={Flooring} 
-        options={{
-          headerTitle: 'Flooring', 
-          headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
-        />
-        <DashboardStack.Screen 
-        name="Tiling" 
-        component={Tiling} 
-        options={{
-          headerTitle: 'Tiling', 
-          headerStyle: {backgroundColor: 'black'}, headerTintColor: Colors.yellow}}
-        />
+          headerTitle: 'Concrete Admixture',
+          headerStyle: {backgroundColor: 'black'},
+          headerTintColor: Colors.yellow,
+        }}
+      />
 
+      <DashboardStack.Screen
+        name="Waterproofing"
+        component={Waterproofing}
+        options={{
+          headerTitle: 'Waterproofing',
+          headerStyle: {backgroundColor: 'black'},
+          headerTintColor: Colors.yellow,
+        }}
+      />
 
+      <DashboardStack.Screen
+        name="SurfaceTreatments"
+        component={SurfaceTreatments}
+        options={{
+          headerTitle: 'Surface Treatment',
+          headerStyle: {backgroundColor: 'black'},
+          headerTintColor: Colors.yellow,
+        }}
+      />
 
+      <DashboardStack.Screen
+        name="GroutsAndAnchor"
+        component={GroutsAndAnchor}
+        options={{
+          headerTitle: 'Grouts & Anchor',
+          headerStyle: {backgroundColor: 'black'},
+          headerTintColor: Colors.yellow,
+        }}
+      />
 
+      <DashboardStack.Screen
+        name="ConcreteRepair"
+        component={ConcreteRepair}
+        options={{
+          headerTitle: 'Concrete Repair',
+          headerStyle: {backgroundColor: 'black'},
+          headerTintColor: Colors.yellow,
+        }}
+      />
+
+      <DashboardStack.Screen
+        name="Sealant"
+        component={Sealant}
+        options={{
+          headerTitle: 'Sealant',
+          headerStyle: {backgroundColor: 'black'},
+          headerTintColor: Colors.yellow,
+        }}
+      />
+
+      <DashboardStack.Screen
+        name="Flooring"
+        component={Flooring}
+        options={{
+          headerTitle: 'Flooring',
+          headerStyle: {backgroundColor: 'black'},
+          headerTintColor: Colors.yellow,
+        }}
+      />
+      <DashboardStack.Screen
+        name="Tiling"
+        component={Tiling}
+        options={{
+          headerTitle: 'Tiling',
+          headerStyle: {backgroundColor: 'black'},
+          headerTintColor: Colors.yellow,
+        }}
+      />
     </DashboardStack.Navigator>
   );
 }
