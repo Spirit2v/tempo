@@ -48,12 +48,13 @@ const Dashboard = ({navigation}) => {
           padding: 4,
           borderBottomWidth: 1,
           borderColor: 'grey',
+          marginHorizontal: 20
         }}>
         <Text style={{fontSize: 18, color: 'white'}}>New Leads</Text>
         <Text style={{fontSize: 16, color: '#ffb600'}}>View all</Text>
       </View>
-      <NewLead time="2" color="red" Days="Urgent" />
-      <NewLead time="4" Days="2 days" color="lime" />
+      <NewLead time="2" color={Colors.lightred} Days="Urgent" />
+      <NewLead time="4" Days="2 days" color={Colors.lightgreen} />
 
       <View
         style={{
@@ -63,6 +64,7 @@ const Dashboard = ({navigation}) => {
           padding: 4,
           borderBottomWidth: 1,
           borderColor: 'grey',
+          marginHorizontal: 20
         }}>
         <Text style={{fontSize: 18, color: 'white'}}>Pitched Lead</Text>
         <Text style={{fontSize: 16, color: '#ffb600'}}>View all</Text>

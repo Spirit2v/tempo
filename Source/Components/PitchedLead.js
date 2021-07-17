@@ -3,6 +3,7 @@ import {View, Text, Image,ScrollView, TouchableHighlight, TouchableOpacity} from
 import Styles from '../Assets/Styles/Styles';
 
 import Arrow_button from '../Components/Arrow_button';
+import Colors from '../Utils/Colors';
 export default function PitchLead({name,rupees}) {
     return (
         <View>
@@ -41,7 +42,7 @@ export default function PitchLead({name,rupees}) {
   >Quantity 10</Text>
 <TouchableOpacity>
   <View
-  style={{backgroundColor:'yellow',borderRadius:13,height:25,width:80,justifyContent:'center',padding:0,alignText:'center',alignItems:'center'}}
+  style={{backgroundColor:Colors.lightyellow,borderRadius:13,height:25,width:80,justifyContent:'center',padding:0,alignText:'center',alignItems:'center'}}
   >
 
 <Text style={{color:'white'}}>

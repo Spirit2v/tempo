@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 import Colors from '../Utils/Colors';
 import Arrow_button from './Arrow_button';
 
 export default class NewPitchItemComponent extends Component{
     render(){
-        let {item} = this.props;
+        let {item, navigation} = this.props;
         return (
             <View style={styles.container}>
                 <View style={styles.column}>
@@ -19,9 +19,13 @@ export default class NewPitchItemComponent extends Component{
                         <Text style={styles.label}>Quantity: </Text>
                         <Text style={styles.value}>{item.quantity}</Text>
                     </View>
-                    <View style={item.isUrgent ? styles.urgent : styles.inDays}>
+                    <TouchableOpacity
+                        onPress={() => {
+                            navigation.navigate('NewLeads')
+                        }} 
+                        style={item.isUrgent ? styles.urgent : styles.inDays}>
                         <Text style={styles.urgencyStatus}>{item.time}</Text>
-                    </View>
+                    </TouchableOpacity>
                 </View>
                 <View style={styles.arrowButtonContainer}>
                     <Arrow_button />

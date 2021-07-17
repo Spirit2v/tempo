@@ -12,7 +12,7 @@ export default class LeadBottomComponent extends Component{
                     <Text style={styles.buttonLabel}>Sort By</Text>
                     <MaterialIcons 
                         name="sort"
-                        size={17}
+                        size={18}
                         color={Colors.yellow}
                         style={styles.buttonIcon}/>
                 </TouchableOpacity>
@@ -21,7 +21,7 @@ export default class LeadBottomComponent extends Component{
                     <Text style={styles.buttonLabel}>Filter</Text>
                     <AntDesign 
                         name="filter" 
-                        size={17}
+                        size={18}
                         color={Colors.yellow}
                         style={styles.buttonIcon}/>
                 </TouchableOpacity>
@@ -32,7 +32,7 @@ export default class LeadBottomComponent extends Component{
 
 const styles = StyleSheet.create({
     container: {
-        height: 60,
+        height: 56,
         backgroundColor: '#2D2D2D',
         flexDirection: 'row'
     },
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     },
     buttonLabel: {
         color: Colors.yellow,
-        fontSize: 18,
+        fontSize: 16,
         fontWeight: 'bold'
     },
     line: {
