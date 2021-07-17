@@ -16,7 +16,7 @@ export default class NewLeadScreen extends Component{
                 data={LEADS}
                 style={styles.container}
                 keyExtractor={item => item.id.toString()}
-                renderItem={({item}) => (<NewPitchItemComponent item={item}/>)}
+                renderItem={({item}) => (<NewPitchItemComponent item={item} {...this.props}/>)}
                 ItemSeparatorComponent={() => <View style={styles.separator}/>}
                 contentContainerStyle={{minHeight: '100%'}}
             />

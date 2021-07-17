@@ -28,10 +28,9 @@ import Pipes from '../Screens/Pipes';
 import PaintAndPutty from '../Screens/PaintAndPutty';
 import Dumper from '../Screens/Dumper';
 import Sand from '../Screens/Sand';
-
 import PitchLeadScreen from '../Screens/PitchLeadScreen';
 import LeadsScreen from '../Screens/LeadsScreen';
-
+import NewLeadsScreen from '../Screens/NewLeadsScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -170,9 +169,12 @@ function Home() {
 
 function Dashbard() {
   return (
-    <DashboardStack.Navigator screenOptions={dashbardHeaderOptions}>
+    <DashboardStack.Navigator 
+      initialRouteName="Leads"
+      screenOptions={dashbardHeaderOptions}>
       <DashboardStack.Screen name="Dashbard" component={DashboardScreen} />
       <DashboardStack.Screen name="PitchLead" component={PitchLeadScreen}/>
+      <DashboardStack.Screen name="NewLeads" component={NewLeadsScreen} options={{headerShown: false}}/>
       <DashboardStack.Screen 
         name="Leads" 
         component={LeadsScreen} 
@@ -338,7 +340,7 @@ function Profile() {
 const TabNavigator = () => {
   return (
     <Tab.Navigator
-      initialRouteName="Home"
+      initialRouteName="Dashboard"
       tabBarOptions={{
         activeTintColor: Colors.yellow,
         inactiveTintColor: Colors.lightgrey,

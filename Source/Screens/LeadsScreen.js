@@ -6,7 +6,7 @@ import Header_Component from '../Components/Header_Component';
 import Colors from '../Utils/Colors';
 import LeadHistoryScreen from './Leads/LeadHistoryScreen';
 import PitchedLeadScreen from './Leads/PitchedLeadScreen';
-import NewLeadScreen from './Leads/NewLeadScreen';
+import NewLeadScreen from './Leads/NewLeadTabScreen';
 import LeadBottomComponent from '../Components/LeadBottomComponent';
 
 const Tab = createMaterialTopTabNavigator();
@@ -21,7 +21,7 @@ function LeadsTab() {
             indicatorStyle: {backgroundColor: Colors.yellow }
         }}>
       <Tab.Screen 
-        name="NewLeads" 
+        name="NewLeadsTab" 
         component={NewLeadScreen} 
         options={{title: 'New Leads'}}/>
       <Tab.Screen 

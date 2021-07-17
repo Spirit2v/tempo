@@ -35,9 +35,6 @@ const styles = StyleSheet.create({
     width: '100%',
     backgroundColor: Colors.blackBlue,
     flexDirection: 'row',
-    marginTop:17,
-
-
     alignItems: 'center',
   },
   Header: {
