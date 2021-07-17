@@ -6,7 +6,6 @@ import Arrow_button from './Arrow_button';
 export default class NewPitchItemComponent extends Component{
     render(){
         let {item, navigation} = this.props;
-        console.log(Object.keys(navigation))
         return (
             <View style={styles.container}>
                 <View style={styles.column}>

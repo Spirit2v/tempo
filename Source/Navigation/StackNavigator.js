@@ -31,7 +31,7 @@ const StackNavigator = () => {
   return (
       <Stack.Navigator 
         screenOptions={{ headerShown: false}} 
-        initialRouteName="Home">
+        initialRouteName="LandingScreen">
         <Stack.Screen name="TabViewExample" component={TabViewExample} />
         <Stack.Screen name="Home" component={TabNavigator} />
         <Stack.Screen name="Dashboard" component={Dashboard} />

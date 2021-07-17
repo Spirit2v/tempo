@@ -170,9 +170,9 @@ function Home() {
 function Dashbard() {
   return (
     <DashboardStack.Navigator 
-      initialRouteName="Leads"
+      initialRouteName="Dashboard"
       screenOptions={dashbardHeaderOptions}>
-      <DashboardStack.Screen name="Dashbard" component={DashboardScreen} />
+      <DashboardStack.Screen name="Dashboard" component={DashboardScreen} />
       <DashboardStack.Screen name="PitchLead" component={PitchLeadScreen}/>
       <DashboardStack.Screen name="NewLeads" component={NewLeadsScreen} options={{headerShown: false}}/>
       <DashboardStack.Screen 
@@ -340,7 +340,7 @@ function Profile() {
 const TabNavigator = () => {
   return (
     <Tab.Navigator
-      initialRouteName="Dashboard"
+      initialRouteName="Home"
       tabBarOptions={{
         activeTintColor: Colors.yellow,
         inactiveTintColor: Colors.lightgrey,
