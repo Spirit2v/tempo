@@ -29,41 +29,41 @@ const Stack = createStackNavigator();
 
 const StackNavigator = () => {
   return (
-      <Stack.Navigator 
-        screenOptions={{ headerShown: false}} 
-        initialRouteName="LandingScreen">
-        <Stack.Screen name="TabViewExample" component={TabViewExample} />
-        <Stack.Screen name="Home" component={TabNavigator} />
-        <Stack.Screen name="Dashboard" component={Dashboard} />
-        <Stack.Screen name="Profile" component={Profile} />
-        <Stack.Screen name="Email" component={EmailId_View} />
-        <Stack.Screen name="Mobile" component={MobileNo_View} />
-        <Stack.Screen name="SignInComponent" component={SignIn_Component} />
-        <Stack.Screen name="SignUp" component={SignUp} />
-        <Stack.Screen name="Services" component={Services} />
-        <Stack.Screen name="Main_Header" component={Main_HeaderComponent} />
-        <Stack.Screen name="Header" component={Header_Component} />
-        <Stack.Screen name="NotificationTab" component={NotificationTab} />
-        <Stack.Screen name="LandingScreen" component={LandingScreen} />
-        <Stack.Screen name="Site_AddressBook" component={Site_AddressBook} />
-        <Stack.Screen name="Help" component={Help} />
-        <Stack.Screen name="About_Us" component={About_Us} />
-        <Stack.Screen name="Feedback" component={Feedback} />
-        <Stack.Screen name="ForgetPassword" component={ForgetPasswordScreen}/>
-        <Stack.Screen name="ResetPassword" component={ResetPasswordScreen}/>
-        <Stack.Screen
-          name="ConstructionMaterials"
-          component={ConstructionMaterials}
-        />
-        <Stack.Screen
-          name="ConstructionVehicles"
-          component={ConstructionVehicles}
-        />
-        <Stack.Screen
-          name="ConstructionChemicals"
-          component={ConstructionChemicals}
-        />
-      </Stack.Navigator>
+    <Stack.Navigator
+      screenOptions={{headerShown: false}}
+      initialRouteName="LandingScreen">
+      <Stack.Screen name="TabViewExample" component={TabViewExample} />
+      <Stack.Screen name="Home" component={TabNavigator} />
+      <Stack.Screen name="Dashboard" component={Dashboard} />
+      <Stack.Screen name="Profile" component={Profile} />
+      <Stack.Screen name="Email" component={EmailId_View} />
+      <Stack.Screen name="Mobile" component={MobileNo_View} />
+      <Stack.Screen name="SignInComponent" component={SignIn_Component} />
+      <Stack.Screen name="SignUp" component={SignUp} />
+      <Stack.Screen name="Services" component={Services} />
+      <Stack.Screen name="Main_Header" component={Main_HeaderComponent} />
+      <Stack.Screen name="Header" component={Header_Component} />
+      <Stack.Screen name="NotificationTab" component={NotificationTab} />
+      <Stack.Screen name="LandingScreen" component={LandingScreen} />
+      <Stack.Screen name="Site_AddressBook" component={Site_AddressBook} />
+      <Stack.Screen name="Help" component={Help} />
+      <Stack.Screen name="About_Us" component={About_Us} />
+      <Stack.Screen name="Feedback" component={Feedback} />
+      <Stack.Screen name="ForgetPassword" component={ForgetPasswordScreen} />
+      <Stack.Screen name="ResetPassword" component={ResetPasswordScreen} />
+      <Stack.Screen
+        name="ConstructionMaterials"
+        component={ConstructionMaterials}
+      />
+      <Stack.Screen
+        name="ConstructionVehicles"
+        component={ConstructionVehicles}
+      />
+      <Stack.Screen
+        name="ConstructionChemicals"
+        component={ConstructionChemicals}
+      />
+    </Stack.Navigator>
   );
 };
 

@@ -179,6 +179,7 @@ padding:-90
   },
   Notifications_Container: {
     backgroundColor: Colors.darkgrey,
+    flex:1
   },
   Profile_container: {
     backgroundColor: Colors.darkgrey,

@@ -5,6 +5,7 @@ import Button from '../Components/Button';
 import Buttonq from '../Components/Buttonq';
 import Buttonq1 from '../Components/Buttonq1';
 import ServiceCardSand from '../Components/ServiceCardSand';
+
 export default function Cement() {
     return (
         <View style={Styles.ProfileDetails_container}>
@@ -25,7 +26,7 @@ export default function Cement() {
             <Buttonq title="save" hi={42} wi={53} />
             <View style={{paddingHorizontal: 10}}></View>
             <Buttonq1 title="Add more service" hi={42} wi={133} />
-          </View>
+        </View>
         </View>
       </View>
     )

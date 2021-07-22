@@ -17,9 +17,28 @@ export default function RentingButton({text,value}) {
         flexDirection:'row'
 
         }}>
-<View
-style={{color:'white',borderColor:'grey',borderWidth:1,height:22,width:22,justifyContent:'center'}}
->
+      <View
+      style={{
+        shadowColor: 'grey',
+
+        shadowOffset: {
+          width: 0,
+          height: 3,
+        },
+        shadowOpacity: 0.3,
+        shadowRadius: 8.65,
+        marginBottom: 17,
+        elevation: 8,  
+        justifyContent:'center',
+
+        
+        height:20,
+        borderRadius:3,
+        width:20,borderColor:'grey',borderWidth:1}}
+      >
+
+
+    
 <CheckBox
     disabled={value}
     value={toggleCheckBox}

@@ -9,17 +9,24 @@ export default class RentingDetail extends Component {
       <View style={Styles.ProfileDetails_container}>
         <View style={{marginBottom: 20}}></View>
 
-        <RentingButton value={false} text="With Driver" />
+        <RentingButton value={false} h={1} text="With Driver" />
 
-        <RentingButton text="With Driver" />
+        <RentingButton h={1} text="Without Driver" />
 
-        <RentingButton value={true} text="With Driver" />
+        <RentingButton value={true} text="Available From" />
 
-        <RentingButton value={true} text="With Driver" />
+        <RentingButton value={true} text="Available To" />
 
         <View style={{marginBottom: 20}}></View>
-
-        <Button title="Save" />
+<View
+style=
+{{justifyContent:'center',
+alignItems:'center'
+}}
+>
+<Button title="Save" />
+</View>
+      
       </View>
     );
   }

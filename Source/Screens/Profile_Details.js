@@ -6,10 +6,13 @@ import ProgressBar from 'react-native-progress/Bar';
 import Colors from '../Utils/Colors';
 import Profile_TextinputCard from '../Components/Profile_TextinputCard';
 import Button from '../Components/Button';
+import { ScrollView } from 'react-native-gesture-handler';
 
 const Profile_Details = ({navigation, percentage = 0}) => {
   return (
-    <View style={Styles.ProfileDetails_container}>
+
+<ScrollView>
+<View style={Styles.ProfileDetails_container}>
       <Text
         style={{
           color: 'white',
@@ -35,8 +38,8 @@ const Profile_Details = ({navigation, percentage = 0}) => {
           marginTop: 50,
           justifyContent: 'space-between',
           width: 152,
-          position: 'absolute',
-          bottom: 100,
+   
+      
           alignSelf: 'center'
         }}>
         <Button
@@ -54,6 +57,10 @@ const Profile_Details = ({navigation, percentage = 0}) => {
         />
       </View>
     </View>
+</ScrollView>
+
+
+   
   );
 };
 

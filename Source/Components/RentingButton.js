@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Text} from 'react-native';
 
 
-export default function RentingButton({text, value}) {
+export default function RentingButton({text,h, value}) {
   const [toggleCheckBox, setToggleCheckBox] = React.useState(false);
   return (
     <View
@@ -28,14 +28,17 @@ export default function RentingButton({text, value}) {
         flexDirection: 'row',
       }}>
 
-      <Text style={{color: 'white',fontSize:16}}>{text}</Text>
+      <Text style={{color: 'white',fontSize:16}}>
+
+        {text}</Text>
+      {  h===1 ? 
       <View
       style={{
         shadowColor: 'grey',
 
         shadowOffset: {
           width: 0,
-          height: 4,
+          height: 3,
         },
         shadowOpacity: 0.3,
         shadowRadius: 8.65,
@@ -51,7 +54,12 @@ export default function RentingButton({text, value}) {
 
 
       </View>
-   
+     
+     :
+     <Text>xx</Text>
+     }
+    
+     
     </View>
   );
 }

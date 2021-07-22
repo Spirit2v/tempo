@@ -6,12 +6,15 @@ import ProgressBar from 'react-native-progress/Bar';
 import Colors from '../Utils/Colors';
 import Profile_TextinputCard from '../Components/Profile_TextinputCard';
 import Button from '../Components/Button';
+import { ScrollView } from 'react-native-gesture-handler';
 
 const Company_Details = ({navigation, route}) => {
   console.log(route)
   let {percentage } = route.params;
   return (
-    <View style={Styles.ProfileDetails_container}>
+    <ScrollView>
+
+<View style={Styles.ProfileDetails_container}>
       <Text style={{color: 'white', alignSelf: 'flex-start',}}>{`${percentage}% completed`}</Text>
       <ProgressBar
         unfilledColor="#6d6e70"
@@ -35,8 +38,7 @@ const Company_Details = ({navigation, route}) => {
           marginTop: 50,
           justifyContent: 'space-between',
           width: 152,
-          position: 'absolute',
-          bottom: 100,
+       
           alignSelf: 'center'
         }}>
         <Button title="Save" style={{height: 40, width: 70}} />
@@ -46,6 +48,8 @@ const Company_Details = ({navigation, route}) => {
           onPress={() => navigation.navigate('Company_Address', {percentage: 66})}/>
       </View>
     </View>
+    </ScrollView>
+   
   );
 };
 

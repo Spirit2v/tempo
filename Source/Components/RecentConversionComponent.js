@@ -7,7 +7,7 @@ const RecentConversions = [
     {id: 2, from: '20 Yards', to: '18.288 Meters'},
 ]
 
-export default class RecentConversionComponent extends Component{
+export default class edRecentConversionComponent extends Component{
 
     constructor(){
         super();

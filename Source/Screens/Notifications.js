@@ -26,7 +26,7 @@ const renderTabBar = props => (
   <TabBar
     {...props}
     indicatorStyle={{backgroundColor: '#FFB600'}}
-    style={{backgroundColor: Colors.darkgrey, width: 200, height: 48}}
+    style={{backgroundColor: Colors.darkgrey, width: '100%', height: 48}}
     activeColor={Colors.yellow}
     inactiveColor={Colors.white}
     renderLabel={({route, color}) => (

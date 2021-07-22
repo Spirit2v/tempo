@@ -7,10 +7,12 @@ import Colors from '../Utils/Colors';
 import Email from '../Assets/Icons/Email.png';
 import Insta from '../Assets/Icons/Insta.png';
 import Twitter from '../Assets/Icons/twitter.png';
+import { ScrollView } from 'react-native-gesture-handler';
 
 const About_Us = () => {
   return (
-    <View style={Styles.Profile_container}>
+    <ScrollView>
+  <View style={Styles.Profile_container}>
       <Header_Component Heading="About Us" />
       <View style={Styles.Aboutus_container}></View>
       <Text
@@ -54,6 +56,8 @@ const About_Us = () => {
         <Text style={[TextStyles.White_text, {margin: 10}]}>Contact Us</Text>
       </View>
     </View>
+    </ScrollView>
+  
   );
 };
 
