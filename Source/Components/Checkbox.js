@@ -4,9 +4,8 @@ import CheckBox from '@react-native-community/checkbox';
 import { useColorModeValue } from 'native-base';
 import { borderColor } from 'styled-system';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import Checkbox from './Checkbox';
 
-export default function RentingButton({text,value}) {
+export default function Checkbox({text,value}) {
   const [checked, onChange] = useState(false);
 
   function onCheckmarkPress() {
@@ -14,25 +13,38 @@ export default function RentingButton({text,value}) {
   }
     const [toggleCheckBox, setToggleCheckBox] = React.useState(false)
     return (
-        <View style={{height:50,
-            borderRadius:5,width:'100%',
-         marginTop:-10,
+      
+      <View
+      style={{
+        shadowColor: 'grey',
 
-            alignItems:'flex-start',
-            justifyContent:'flex-start',
-           
-            padding:10,
-            borderColor:'grey',
-        flexDirection:'row'
+        shadowOffset: {
+          width: 0,
+          height: 3,
+        },
+        shadowOpacity: 0.3,
+        shadowRadius: 8.65,
+        marginBottom: 17,
+        elevation: 8,  
+        justifyContent:'center',
 
-        }}>
-    <Checkbox />
+        
+        height:20,
+        borderRadius:3,
+        width:20,borderColor:'grey',borderWidth:1}}
+      >
+<TouchableOpacity
+  style={[styles.checkboxBase, checked && styles.checkboxChecked]}
+onPress={onCheckmarkPress}
+>
+{checked && <Ionicons name="checkmark" size={24} color="#00FF00" />}
+</TouchableOpacity>
+    
 
-            <Text
-            style={{color:'#B4B9BF',marginLeft:26,marginTop:6}}
-            >{text}</Text>
-              
-        </View>
+</View>
+
+         
+         
     )
 }
 const styles = StyleSheet.create({

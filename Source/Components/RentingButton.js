@@ -1,5 +1,6 @@
 import React from 'react';
 import {View, Text} from 'react-native';
+import Checkbox from './Checkbox';
 
 
 export default function RentingButton({text,h, value}) {
@@ -31,32 +32,14 @@ export default function RentingButton({text,h, value}) {
       <Text style={{color: 'white',fontSize:16}}>
 
         {text}</Text>
-      {  h===1 ? 
-      <View
-      style={{
-        shadowColor: 'grey',
+      {  h===true ?
+      <Text
+      style={{color:'white'}}
+      ></Text> 
 
-        shadowOffset: {
-          width: 0,
-          height: 3,
-        },
-        shadowOpacity: 0.3,
-        shadowRadius: 8.65,
-        marginBottom: 17,
-        elevation: 8,  
-        justifyContent:'center',
-
-        
-        height:20,
-        borderRadius:3,
-        width:20,borderColor:'grey',borderWidth:1}}
-      >
-
-
-      </View>
      
      :
-     <Text>xx</Text>
+     <Checkbox />
      }
     
      

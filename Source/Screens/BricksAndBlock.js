@@ -9,10 +9,15 @@ export default function BricksAndBlock({navigation}) {
   return (
     <View style={Styles.ProfileDetails_container}>
       <View style={{marginTop: 8, paddingHorizontal: 7}}>
-        <RentingButton text="Clay Bricks" />
-        <RentingButton text="Cement Bricks" />
+        <RentingButton text="Clay Bricks" 
+    />
+        <RentingButton
+        
+        text="Cement Bricks" />
 
-        <RentingButton text="Fly Ash Bricks" />
+        <RentingButton
+       
+        text="Fly Ash Bricks" />
 
         <TouchableOpacity style={{flexDirection: 'row'}}>
           <Text style={{color: '#ffb600', fontSize: 26}}>+</Text>

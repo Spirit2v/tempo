@@ -1,66 +1,44 @@
-import React from "react"
-import {
-  Menu,
-  Button,
-  VStack,
-  Select,
-  CheckIcon,
-  Center,
-  NativeBaseProvider,
-} from "native-base"
-export default function Example() {
-  const [shouldOverlapWithTrigger] = React.useState(false)
-  const [position, setPosition] = React.useState("auto")
-  return (
-    <NativeBaseProvider>
-    <Center flex={1}>
-    <VStack space={6} alignSelf="flex-start" w="100%">
-      <Menu
-        shouldOverlapWithTrigger={shouldOverlapWithTrigger} // @ts-ignore
-        placement={position == "auto" ? undefined : position}
-        trigger={(triggerProps) => {
-          return (
-            <Button alignSelf="center" variant="solid" {...triggerProps}>
-              Menu
-            </Button>
-          )
-        }}
-      >
-        <Menu.Item>Large Menu item 1</Menu.Item>
-        <Menu.Item>Large Menu item 2</Menu.Item>
-        <Menu.Item>Large Menu item 3</Menu.Item>
-      </Menu>
+import React from 'react';
+import {View, Text} from 'react-native';
+import {ScrollView, TextInput} from 'react-native-gesture-handler';
+import Styles from '../Assets/Styles/Styles';
+import Header_Component from '../Components/Header_Component';
+import Colors from '../Utils/Colors';
+import Button from '../Components/Button';
+import TextStyles from '../Assets/Styles/TextStyles';
 
-      <Select
-        selectedValue={position}
-        mx={{
-          base: 0,
-          md: "auto",
-        }}
-        accessibilityLabel="Select your favorite programming language"
-        placeholder="Select your favorite programming language"
-        onValueChange={(nextValue) => setPosition(nextValue)}
-        _selectedItem={{
-          bg: "cyan.600",
-          endIcon: <CheckIcon size={4} />,
-        }}
-      >
-        <Select.Item label="auto" value="auto" />
-        <Select.Item label="Top Left" value="top left" />
-        <Select.Item label="Top" value="top" />
-        <Select.Item label="Top Right" value="top right" />
-        <Select.Item label="Right Top" value="right top" />
-        <Select.Item label="Right" value="right" />
-        <Select.Item label="Right Bottom" value="right bottom" />
-        <Select.Item label="Bottom Left" value="bottom left" />
-        <Select.Item label="Bottom" value="bottom" />
-        <Select.Item label="Bottom Right" value="bottom right" />
-        <Select.Item label="Left Top" value="left top" />
-        <Select.Item label="Left" value="left" />
-        <Select.Item label="Left Bottom" value="left bottom" />
-      </Select>
-    </VStack>
-    </Center>
-    </NativeBaseProvider>
-  )
-}
+const Help = () => {
+  return (
+    <ScrollView style={{flex: 1, backgroundColor: '#121417'}}>
+      <Header_Component Heading="Help" />
+      <View
+        style={[Styles.Aboutus_container, {height: 369, alignItems: 'center',marginTop:-2}]}>
+        <View style={Styles.Feedback_Input}>
+          <TextInput
+            multiline={true}
+            placeholder="Tell us more about your problem"
+            placeholderTextColor={Colors.lightgrey}
+            style={{fontFamily: 'Open Sans'}}
+          />
+        
+          <View style={{alignItems: 'center'}}>
+
+        
+          </View>
+          
+        </View>
+        <Button title="Submit" style={{alignSelf: 'center', margin: 40}} />
+      </View>
+     
+      <View style={[Styles.Aboutus_Footer, {marginTop: 45}]}>
+        <Text style={[TextStyles.White_text, {margin: 10}]}>
+          Privacy and terms
+        </Text>
+        <Text style={[TextStyles.White_text, {margin: 10}]}>Contact Us</Text>
+      </View>
+
+    </ScrollView>
+      );
+};
+
+export default Help;

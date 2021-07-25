@@ -246,4 +246,11 @@ padding:-90
     backgroundColor: Colors.white,
     marginTop: 35,
   },
+  Feedback_Input: {
+    width: 264,
+    height: 173,
+    borderRadius: 10,
+    backgroundColor: Colors.white,
+    marginTop: 35,
+  },
 });

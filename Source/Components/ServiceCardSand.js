@@ -21,7 +21,7 @@ const ServiceCardSand = ({title}) => {
     onSelect={(selectedItem, index) => {
       console.log(selectedItem, index)
     }}
-    buttonTextStyle={{color:'white',fontSize:14}}
+    buttonTextStyle={{color:'white',fontSize:14,marginLeft:'-52%'}}
     buttonStyle={
       { width: '100%',
       height: 53,
