@@ -24,12 +24,18 @@ import RecentConversionComponent from '../Components/RecentConversionComponent';
 import LeadComponent from './../Components/LeadComponent';
 import UnitConvertorComponent from '../Components/UnitConvertorComponent';
 import {TouchableOpacity} from 'react-native-gesture-handler';
+import HomeHeader from '../Components/HomeHeader';
 
 export default class HomeScreen extends Component {
   render() {
     // let {dropDownVisible} = this.state;
     let array = new Array(1, 2, 3, 4, 5, 6, 7);
     return (
+      <>
+
+    <HomeHeader
+    
+    />
       <FlatList
         style={styles.container}
         contentContainerStyle={{padding: 0}}
@@ -44,24 +50,7 @@ export default class HomeScreen extends Component {
           </>
         }
       />
-      // <View style={{flex: 1}}>
-      //     <View style={{flex: 1, backgroundColor: 'green', elevation: -1}}></View>
-      //     <View style={{flex: 1, backgroundColor: 'yellow'}}></View>
-      //     <View style={{flex: 1, backgroundColor: 'blue', position: 'absolute', top: 100}}>
-      //       <View style={{backgroundColor: 'red', height: 500, width: 200, elevation: 2}}>
-      //         {array.map((data, index) => (
-      //           <View style={{flex: 1}} key={index}>
-      //              <TouchableOpacity
-
-      //                 key={index}
-      //                 onPress={() => console.log('clicked')}>
-      //                 <Text>sdfsdf</Text>
-      //             </TouchableOpacity>
-      //           </View>
-      //         ))}
-      //       </View>
-      //     </View>
-      // </View>
+     </>       
     );
   }
 }
@@ -70,6 +59,7 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: '#121417',
     flex: 1,
+    marginTop:-12
   },
   headerImage: {
     height: 170,

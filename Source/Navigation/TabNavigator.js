@@ -55,6 +55,7 @@ import Sealant from '../Screens/Sealant';
 import Flooring from '../Screens/Flooring';
 import Tiling from '../Screens/Tiling';
 import DashboardDash from '../Screens/DashboardDash';
+import DashedIcon from '../Components/DashedIcon';
 const Tab = createBottomTabNavigator();
 
 const HomeStack = createStackNavigator();
@@ -63,7 +64,7 @@ const ProfileStack = createStackNavigator();
 
 const homeHeaderOptions = ({navigation}) => ({
   headerTitle: null,
-  headerShown: true,
+  headerShown: false,
   headerStyle: {backgroundColor: PRIMARY, elevation: 0},
   headerTintColor: Colors.yellow,
   headerRight: () => {
@@ -164,16 +165,8 @@ const profileHeaderOptions = ({navigation}) => ({
     );
   },
   headerLeft: () => (
-    <View
-      style={{
-        height: 36,
-        width: 36,
-        borderWidth: 1,
-        borderColor: Colors.yellow,
-        borderRadius: 18,
-        marginLeft: 10,
-        borderStyle: 'dashed',
-      }}></View>
+<DashedIcon/>
+  
   ),
 });
 

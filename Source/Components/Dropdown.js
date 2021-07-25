@@ -8,12 +8,10 @@ import {
   Center,
   NativeBaseProvider,
 } from "native-base"
-export default function Example() {
+export function Example() {
   const [shouldOverlapWithTrigger] = React.useState(false)
   const [position, setPosition] = React.useState("auto")
   return (
-    <NativeBaseProvider>
-    <Center flex={1}>
     <VStack space={6} alignSelf="flex-start" w="100%">
       <Menu
         shouldOverlapWithTrigger={shouldOverlapWithTrigger} // @ts-ignore
@@ -60,7 +58,15 @@ export default function Example() {
         <Select.Item label="Left Bottom" value="left bottom" />
       </Select>
     </VStack>
-    </Center>
+  )
+}
+
+export default () => {
+  return (
+    <NativeBaseProvider>
+      <Center flex={1}>
+        <Example />
+      </Center>
     </NativeBaseProvider>
   )
 }
