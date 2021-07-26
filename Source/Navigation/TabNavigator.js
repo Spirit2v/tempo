@@ -32,7 +32,7 @@ import BasicInformation from '../Screens/dashboard/services/vehicle/BasicInforma
 import PitchLeadScreen from '../Screens/PitchLeadScreen';
 import LeadsScreen from '../Screens/LeadsScreen';
 import PaperWork from '../Screens/PaperWork';
-import Transmitmixer from '../Screens/TransitMixture';
+import Transmitmixer from '../Screens/dashboard/services/vehicle/TransitMixture';
 import Crane from '../Screens/dashboard/services/vehicle/Crane';
 import CrawlerCrane from '../Screens/CrawlerCrane';
 import TyreMountedCrane from '../Screens/TyreMountedCrane';

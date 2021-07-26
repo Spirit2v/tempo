@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
-import DumperCard from '../Components/DumperCard';
-import Styles from '../Assets/Styles/Styles';
+import DumperCard from '../../../../Components/DumperCard';
+import Styles from '../../../../Assets/Styles/Styles';
 export default function Transmitmixer({navigation}) {
   return (
     <View>
