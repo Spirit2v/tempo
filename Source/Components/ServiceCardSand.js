@@ -14,7 +14,7 @@ import {
   NativeBaseProvider,
 } from "native-base"
 import SelectDropdown from 'react-native-select-dropdown'
-const ServiceCardSand = ({title}) => {
+const ServiceCardSand = ({title,Placehold}) => {
   return (
     <SelectDropdown
     data={title}

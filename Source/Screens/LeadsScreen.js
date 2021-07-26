@@ -4,9 +4,9 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 import { StyleSheet, View, StatusBar } from 'react-native';
 import Header_Component from '../Components/Header_Component';
 import Colors from '../Utils/Colors';
-import LeadHistoryScreen from './Leads/LeadHistoryScreen';
-import PitchedLeadScreen from './Leads/PitchedLeadScreen';
-import NewLeadScreen from './Leads/NewLeadTabScreen';
+import LeadHistoryScreen from './dashboard/Leads/LeadHistoryScreen';
+import PitchedLeadScreen from './dashboard/Leads/PitchedLeadScreen';
+import NewLeadScreen from './dashboard/Leads/NewLeadTabScreen';
 import LeadBottomComponent from '../Components/LeadBottomComponent';
 
 const Tab = createMaterialTopTabNavigator();
