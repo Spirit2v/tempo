@@ -3,13 +3,13 @@ import {View, Text, TouchableOpacity, SafeAreaView} from 'react-native';
 import Styles from '../../Assets/Styles/Styles';
 import Header_Component from '../../Components/Header_Component';
 import Service_card from '../../Components/Service_card';
-import C_materials from '../Assets/Icons/Construction_Materials.png';
-import C_agents from '../Assets/Icons/Agents.png';
-import C_vehicles from '../Assets/Icons/Construction_Vehicles.png';
-import C_chemicals from '../Assets/Icons/construction_chemical.png';
+import C_materials from '../../Assets/Icons/Construction_Materials.png';
+import C_agents from '../../Assets/Icons/Agents.png';
+import C_vehicles from '../../Assets/Icons/Construction_Vehicles.png';
+import C_chemicals from '../../Assets/Icons/construction_chemical.png';
 import ConstructionMaterials from './services/ConstructionMaterials';
 import ConstructionVehicles from './services/ConstructionVehicles';
-import ConstructionChemicals from '../ConstructionChemicals';
+import ConstructionChemicals from './services/ConstructionChemicals';
 import Agents from './services/Agents';
 
 const Services = ({navigation}) => {

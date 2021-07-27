@@ -1,10 +1,10 @@
 import React from 'react';
 import {View, Text} from 'react-native';
-import Styles from '../Assets/Styles/Styles';
-import Button from '../Components/Button';
-import Buttonq from '../Components/Buttonq';
-import Buttonq1 from '../Components/Buttonq1';
-import ServiceCardSand from '../Components/ServiceCardSand';
+import Styles from '../../../../Assets/Styles/Styles';
+import Button from '../../../../Components/Button';
+import Buttonq from '../.././../../Components/Buttonq';
+import Buttonq1 from '../../../../Components/Buttonq1';
+import ServiceCardSand from '../../../../Components/ServiceCardSand';
 export default function TMTsteel() {
   const Brands=['Select All','TATA TMT Steel','Vizag TMT Steel','Jindal TMT Steel','Simhadri TMT Steel','Mangal TMT Steel','Essar Steel','Mesco Steel','SRMB Steel','SAIL Steel','Kamdhenu Steel','Vinayak Steel','Visa Steel']
   const Grades=['Select All','Fe 450','Fe 500','Fe 500D','Fe 550','Fe 550D']

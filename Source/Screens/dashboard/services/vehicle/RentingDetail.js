@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {Text, View, CheckBox} from 'react-native';
-import Styles from '../Assets/Styles/Styles';
-import Button from '../Components/Button';
-import RentingButton from '../Components/RentingButton';
+import Styles from '../../../../Assets/Styles/Styles';
+import Button from '../../../../Components/Button';
+import RentingButton from '../../../../Components/RentingButton';
 export default class RentingDetail extends Component {
   render() {
     return (

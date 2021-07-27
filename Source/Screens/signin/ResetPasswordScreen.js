@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import {View, Text, TouchableOpacity, Image, StyleSheet, Dimensions} from 'react-native';
-import { PRIMARY } from '../Assets/Colors/baseColor';
-import Styles from '../Assets/Styles/Styles';
-import TextStyles from '../Assets/Styles/TextStyles';
+import { PRIMARY } from '../../Assets/Colors/baseColor';
+import Styles from '../../Assets/Styles/Styles';
+import TextStyles from '../../Assets/Styles/TextStyles';
 import { HelperText, TextInput } from 'react-native-paper';
-import Colors from '../Utils/Colors';
+import Colors from '../../Utils/Colors';
 
 const HEIGHT = Dimensions.get('window').height;
 

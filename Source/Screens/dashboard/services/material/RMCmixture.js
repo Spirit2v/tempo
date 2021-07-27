@@ -1,10 +1,10 @@
 import React from 'react'
 import { View, Text } from 'react-native'
-import Styles from '../Assets/Styles/Styles';
-import Button from '../Components/Button';
-import Buttonq from '../Components/Buttonq';
-import Buttonq1 from '../Components/Buttonq1';
-import ServiceCardSand from '../Components/ServiceCardSand';
+import Styles from '../../../../Assets/Styles/Styles';
+import Button from '../../../../Components/Button';
+import Buttonq from '../../../../Components/Buttonq';
+import Buttonq1 from '../../../../Components/Buttonq1';
+import ServiceCardSand from '../../../../Components/ServiceCardSand';
 export default function RMCmixture() {
  const Grades=['Select All','M 10','M 15','M 20','M 25','M 30','M 35','M 40','M 45']
   return (

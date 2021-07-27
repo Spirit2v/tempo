@@ -12,7 +12,7 @@ import TextStyles from '../../Assets/Styles/TextStyles';
 import Ad_card from '../../Components/Ad_card';
 import Dashboard_card from '../../Components/Dashboard_card';
 import Main_HeaderComponent from '../../Components/Main_HeaderComponent';
-import ServicesIcon from '../Assets/Icons/Services_icon.png';
+import ServicesIcon from '../../Assets/Icons/Services_icon.png';
 import Services from './Services';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Colors from '../../Utils/Colors';

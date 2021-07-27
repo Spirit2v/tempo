@@ -1,12 +1,12 @@
 import React from 'react';
 import {View, Text, Image} from 'react-native';
-import Styles from '../Assets/Styles/Styles';
-import TextStyles from '../Assets/Styles/TextStyles';
-import Header_Component from '../Components/Header_Component';
-import Colors from '../Utils/Colors';
+import Styles from '../../Assets/Styles/Styles';
+import TextStyles from '../../Assets/Styles/TextStyles';
+import Header_Component from '../../Components/Header_Component';
+import Colors from '../../Utils/Colors';
 import Email from '../../Assets/Icons/Email.png';
 import Insta from '../../Assets/Icons/Insta.png';
-import Twitter from '../Assets/Icons/twitter.png';
+import Twitter from '../../Assets/Icons/twitter.png';
 import { ScrollView } from 'react-native-gesture-handler';
 
 const About_Us = () => {

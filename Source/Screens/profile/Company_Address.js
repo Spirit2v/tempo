@@ -1,11 +1,11 @@
 import React from 'react';
 import {View, Text} from 'react-native';
-import Styles from '../Assets/Styles/Styles';
-import Header_Component from '../Components/Header_Component';
+import Styles from '../../Assets/Styles/Styles';
+import Header_Component from '../../Components/Header_Component';
 import ProgressBar from 'react-native-progress/Bar';
-import Colors from '../Utils/Colors';
-import Profile_TextinputCard from '../Components/Profile_TextinputCard';
-import Button from '../Components/Button';
+import Colors from '../../Utils/Colors';
+import Profile_TextinputCard from '../../Components/Profile_TextinputCard';
+import Button from '../../Components/Button';
 import { ScrollView } from 'react-native-gesture-handler';
 
 const Company_Address = ({navigation, route}) => {

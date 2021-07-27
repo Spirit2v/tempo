@@ -1,10 +1,10 @@
 import React from 'react';
 import {View, Text, Touchable, TouchableOpacity} from 'react-native';
-import RentingButton from '../Components/RentingButton';
-import Styles from '../Assets/Styles/Styles';
-import Button from '../Components/Button';
-import Buttonq from '../Components/Buttonq';
-import Buttonq1 from '../Components/Buttonq1';
+import RentingButton from '../../../../Components/RentingButton';
+import Styles from '../../../../Assets/Styles/Styles';
+import Button from '../../../../Components/Button';
+import Buttonq from '../../../../Components/Buttonq';
+import Buttonq1 from '../../../../Components/Buttonq1';
 export default function Sand({navigation}) {
   return (
     <View style={Styles.ProfileDetails_container}>

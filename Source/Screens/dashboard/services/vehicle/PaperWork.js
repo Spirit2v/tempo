@@ -1,9 +1,9 @@
 import React from 'react';
 import {View, Text} from 'react-native';
-import Styles from '../Assets/Styles/Styles';
-import Button from '../Components/Button';
+import Styles from '../../../../Assets/Styles/Styles';
+import Button from '../../../../Components/Button';
 
-import PaperWorkButton from '../Components/PaperWorkButton';
+import PaperWorkButton from '../../../../Components/PaperWorkButton';
 export default function PaperWork({navigation}) {
   return (
     <View style={Styles.ProfileDetails_container}>

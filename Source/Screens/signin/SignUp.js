@@ -7,12 +7,12 @@ import {
   StyleSheet,
   Dimensions,
 } from 'react-native';
-import Styles from '../Assets/Styles/Styles';
+import Styles from '../../Assets/Styles/Styles';
 import CheckBox from '@react-native-community/checkbox';
 import {useNavigation, CommonActions} from '@react-navigation/native';
-import TextStyles from '../Assets/Styles/TextStyles';
+import TextStyles from '../../Assets/Styles/TextStyles';
 import {TextInput} from 'react-native-paper';
-import Home from './Home';
+import Home from '../home/Home';
 
 const screenHeight = Dimensions.get('window').height;
 

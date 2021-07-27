@@ -14,10 +14,13 @@ import {
   NativeBaseProvider,
 } from "native-base"
 import SelectDropdown from 'react-native-select-dropdown'
+import CheckBox from 'react-native-check-box';
+import Checkbox from './Checkbox';
 const ServiceCardSand = ({title,Placehold}) => {
   return (
+    
     <SelectDropdown
-    data={title}
+    data={<CheckBox /> && title}
     onSelect={(selectedItem, index) => {
       console.log(selectedItem, index)
     }}
@@ -40,6 +43,7 @@ const ServiceCardSand = ({title,Placehold}) => {
       elevation: 8,
       marginBottom:20
     }}
+    rowStyle={{}}
     renderDropdownIcon={()=> <ArrowDownward/>}
     dropdownIconPosition = "right"
     buttonTextAfterSelection={(selectedItem, index) => {

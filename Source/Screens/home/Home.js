@@ -10,9 +10,9 @@ import {
 } from 'react-native';
 
 // import headerImage from '../Assets/Icons/HeaderIcon.png'
-import imp1 from '../Assets/Icons/HeaderQuestion.png';
-import imp2 from '../Assets/Icons/HeaderNotification.png';
-import headerImage from './../Assets/Images/HomeWall.png';
+import imp1 from '../../Assets/Icons/HeaderQuestion.png';
+import imp2 from '../../Assets/Icons/HeaderNotification.png';
+import headerImage from '../../Assets/Images/HomeWall.png';
 
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';

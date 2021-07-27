@@ -1,11 +1,11 @@
 import React from 'react';
 import {View, Text, Touchable, TouchableOpacity} from 'react-native';
-import RentingButton from '../Components/RentingButton';
-import Styles from '../Assets/Styles/Styles';
+import RentingButton from '../../../../Components/RentingButton';
+import Styles from '../../../../Assets/Styles/Styles';
 
-import Buttonq from '../Components/Buttonq';
-import Buttonq1 from '../Components/Buttonq1';
-import ServiceCardSand from '../Components/ServiceCardSand';
+import Buttonq from '../../../../Components/Buttonq';
+import Buttonq1 from '../../../../Components/Buttonq1';
+import ServiceCardSand from '../../../../Components/ServiceCardSand';
 
 import {
   Menu,
@@ -16,8 +16,8 @@ import {
   Center,
   NativeBaseProvider,
 } from "native-base"
-import Colors from '../Utils/Colors';
-import ArrowDownward from '../Components/ArrowDownward';
+import Colors from '../../../../Utils/Colors';
+import ArrowDownward from '../../../../Components/ArrowDownward';
 import { margin } from 'styled-system';
 export default function Waterproofing({navigation}) {
   const countries = ["Egypt", "Canada", "Australia", "Ireland"]

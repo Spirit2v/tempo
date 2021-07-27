@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text } from 'react-native'
-import Styles from '../Assets/Styles/Styles';
-import Profile_card from '../Components/Profile_card';
+import Styles from '../../../../Assets/Styles/Styles';
+import Profile_card from '../../../../Components/Profile_card';
 export default function Forklift() {
     return (
         <View style={Styles.ProfileDetails_container}>

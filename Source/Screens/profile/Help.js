@@ -1,44 +1,43 @@
-import React from 'react';
-import {View, Text} from 'react-native';
-import {ScrollView, TextInput} from 'react-native-gesture-handler';
-import Styles from '../../Assets/Styles/Styles';
-import Header_Component from '../../Components/Header_Component';
-import Colors from '../../Utils/Colors';
-import Button from '../../Components/Button';
-import TextStyles from '../../Assets/Styles/TextStyles';
+import React, { useState } from 'react';
+
+//import all the components we are going to use
+import { SafeAreaView, StyleSheet, View, Button, Image } from 'react-native';
 
 const Help = () => {
+  const [shouldShow, setShouldShow] = useState(true);
   return (
-    <ScrollView style={{flex: 1, backgroundColor: '#121417'}}>
-      <Header_Component Heading="Help" />
-      <View
-        style={[Styles.Aboutus_container, {height: 369, alignItems: 'center',marginTop:-2}]}>
-        <View style={Styles.Feedback_Input}>
-          <TextInput
-            multiline={true}
-            placeholder="Tell us more about your problem"
-            placeholderTextColor={Colors.lightgrey}
-            style={{fontFamily: 'Open Sans'}}
-          />
-        
-          <View style={{alignItems: 'center'}}>
+    <SafeAreaView style={{ flex: 1 }}>
+      <View style={styles.container}>
+      <Button
+          title="Hide/Show Component"
+          onPress={() => setShouldShow(!shouldShow)}
+        />
+        {/*Here we will return the view when state is true 
+        and will return false if state is false*/}
+        {shouldShow ? (
 
-        
-          </View>
           
-        </View>
-        <Button title="Submit" style={{alignSelf: 'center', margin: 40}} />
+          <Image
+            source={{
+              uri:
+                'https://raw.githubusercontent.com/AboutReact/sampleresource/master/old_logo.png',
+            }}
+            style={{ width: 250, height: 250 }}
+          />
+        ) : null}
+      
       </View>
-     
-      <View style={[Styles.Aboutus_Footer, {marginTop: 45}]}>
-        <Text style={[TextStyles.White_text, {margin: 10}]}>
-          Privacy and terms
-        </Text>
-        <Text style={[TextStyles.White_text, {margin: 10}]}>Contact Us</Text>
-      </View>
-
-    </ScrollView>
-      );
+    </SafeAreaView>
+  );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    flex: 1,
+    margin: 10,
+  },
+});
 
 export default Help;
