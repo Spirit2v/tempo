@@ -32,7 +32,7 @@ const About_Us = () => {
         tortor vel ut at nunc nisl potenti. Sit amet, pulvinar at mi. Consequat
         egestas a.
       </Text>
-      <View style={[Styles.Aboutus_view, {marginTop: 40}]}>
+      <View style={[Styles.Aboutus_view, {marginTop: 10}]}>
         <Text
           style={[TextStyles.White_text, {fontSize: 16, fontWeight: '700'}]}>
           Reach us at :

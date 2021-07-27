@@ -1,128 +1,116 @@
 import React, {useState} from 'react';
-
-//import all the components we are going to use
-import {
-  SafeAreaView,
-  StyleSheet,
-  View,
-  Button,
-  Text,
-  Image,
-  TouchableOpacity,
-} from 'react-native';
-
+import {View, Text,StyleSheet, TouchableOpacity} from 'react-native';
+import {ScrollView, TextInput} from 'react-native-gesture-handler';
+import Styles from '../../Assets/Styles/Styles';
+import Header_Component from '../../Components/Header_Component';
 import Colors from '../../Utils/Colors';
+import Button from '../../Components/Button';
 import TextStyles from '../../Assets/Styles/TextStyles';
-import Arrow_button from '../../Components/Arrow_button';
-import ArrowDownward from '../../Components/ArrowDownward';
-import {
-  Menu,
-  VStack,
-  Select,
-  CheckIcon,
-  Center,
-  NativeBaseProvider,
-} from 'native-base';
-import SelectDropdown from 'react-native-select-dropdown';
-import CheckBox from 'react-native-check-box';
-import Checkbox from '../../Components/Checkbox';
-import {Touchable} from 'react-native';
-
+import Ionicons from 'react-native-vector-icons/Ionicons';
 const Help = () => {
-  const [shouldShow, setShouldShow] = useState(true);
+  const [should, setshould] = useState(true);
   return (
-    <SafeAreaView style={{flex: 1}}>
-      <View style={styles.container}>
-     
-        {/*Here we will return the view when state is true 
-        and will return false if state is false*/}
-        {shouldShow ? (
-          <TouchableOpacity
-            style={styles.boxe}
-            onPress={() => setShouldShow(!shouldShow)}>
-              <View
-              style={{flexDirection:'row',justifyContent:'space-between',alignItems:'stretch'}}
-              >
-              <Text
-              style={{color:'white'}}
-              >
-                Enter name
-              </Text>
-              <ArrowDownward />
-              </View>
-   
-          </TouchableOpacity>
-        ) 
-        :
-         (
-          <TouchableOpacity
-            style={styles.boxe1}
-            onPress={() => setShouldShow(!shouldShow)}>
-            <View>
+    <ScrollView style={{flex: 1, backgroundColor: '#121417'}}>
+      <Header_Component Heading="Help" />
+      <View
+        style={[
+          Styles.Aboutus_container,
+          {height: 369, alignItems: 'center', marginTop: -2},
+        ]}>
+        {should ? (
+          <View style={{marginTop: 100}}>
             <Text
-              style={{color:'white'}}
-              >
-                Enter name
-              </Text>
-              <Text
-              style={{color:'white'}}
-              >
-                Enter name
-              </Text>
-              
-              
+              style={{
+                color: 'white',
+                fontSize: 25,
+                marginBottom: 10,
+                fontWeight: 'bold',
+              }}>
+              How can we help you?
+            </Text>
 
+            <TouchableOpacity onPress={() => setshould(!should)}>
+              <View style={Styles.Feedback_Input}>
+                <Text
+                  style={{
+                    color: 'grey',
+                    justifyContent: 'center',
+                    textAlign: 'center',
+                  }}>
+                  Tell us more about your problem
+                </Text>
+              </View>
+            </TouchableOpacity>
+          </View>
+        ) : (
+          <>
+            <Text
+              style={{
+                color: 'white',
+                fontSize: 25,
+                marginTop: 70,
+                fontWeight: 'bold',
+              }}>
+              How can we help you?
+            </Text>
+            <View style={Styles.Feedback_Input1}>
+              <TextInput
+                multiline={true}
+                placeholder="Tell us more about your problem"
+                placeholderTextColor={Colors.lightgrey}
+                style={{fontFamily: 'Open Sans'}}
+              />
+
+              <View
+                style={{
+                  marginLeft: '30%',
+                  marginTop: 92,
+                  flexDirection: 'row',
+                }}>
+                  <TouchableOpacity>
+                  <View style={styles.boxButton}>
+                  <Ionicons name="attach-outline" size={16} color="black" />
+                  <Text
+                  style={{fontSize:12}}
+                  >Attach</Text>
+                </View>
+                  </TouchableOpacity>
+               <TouchableOpacity>
+               <View style={styles.boxButton}>
+                  <Ionicons name="send-outline" size={12} color="black" />
+                  <Text
+                   style={{fontSize:12,fontWeight:'800'}}>Send</Text>
+                </View>
+               </TouchableOpacity>
+                
+              </View>
             </View>
-          </TouchableOpacity>
+          </>
         )}
       </View>
-    </SafeAreaView>
+
+      <View style={[Styles.Aboutus_Footer, {marginTop: 45}]}>
+        <Text style={[TextStyles.White_text, {margin: 10}]}>
+          Privacy and terms
+        </Text>
+        <Text style={[TextStyles.White_text, {margin: 10}]}>Contact Us</Text>
+      </View>
+    </ScrollView>
   );
 };
 
+export default Help;
+
 const styles = StyleSheet.create({
-  container: {
+  boxButton: {
+    flexDirection: 'row',
+    borderRadius: 9,
+    padding: 1,
+    height: 23,
+    width: 69,
+    backgroundColor: '#ffb600',
     justifyContent: 'center',
     alignItems: 'center',
-    flex: 1,
-    margin: 10,
-  },
-  boxe: {
-    width: '100%',
-    height: 53,
-    backgroundColor: Colors.blackBlue,
-    borderRadius: 10,
-
-    padding: 8,
-    shadowColor: 'white',
-    shadowOffset: {
-      width: 0,
-      height: 4,
-    },
-    shadowOpacity: 0.3,
-    shadowRadius: 4.65,
-    marginBottom: 17,
-    elevation: 8,
-    marginBottom: 20,
-  },
-  boxe1: {
-    width: '100%',
-    height: 253,
-    backgroundColor: Colors.blackBlue,
-    borderRadius: 10,
-
-    padding: 8,
-    shadowColor: 'white',
-    shadowOffset: {
-      width: 0,
-      height: 4,
-    },
-    shadowOpacity: 0.3,
-    shadowRadius: 4.65,
-    marginBottom: 17,
-    elevation: 8,
-    marginBottom: 20,
+    marginHorizontal:6
   },
 });
-
-export default Help;

@@ -4,6 +4,7 @@ import Styles from '../../../../Assets/Styles/Styles';
 import Button from '../../../../Components/Button';
 import Buttonq from '../../../../Components/Buttonq';
 import Buttonq1 from '../../../../Components/Buttonq1';
+import DropdownCheckbox from '../../../../Components/DropdownCheckbox';
 import ServiceCardSand from '../../../../Components/ServiceCardSand';
 
 export default function Cement() {
@@ -12,12 +13,16 @@ export default function Cement() {
     return (
         <View style={Styles.ProfileDetails_container}>
         <View style={{marginTop: 8, paddingHorizontal: 7}}>
+        <DropdownCheckbox 
+   Types={Brand}
+   />
    <ServiceCardSand 
    title= {Brand}
    />
    <ServiceCardSand 
    title={Grades}
    />
+
           <View
             style={{
               marginTop: 20,

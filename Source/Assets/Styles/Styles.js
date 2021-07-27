@@ -226,7 +226,7 @@ padding:-90
     height: 240,
     width: '100%',
     backgroundColor: Colors.blackBlue,
-    marginTop: 20,
+    marginTop: 0,
   },
   Aboutus_view: {
     flexDirection: 'row',
@@ -241,16 +241,15 @@ padding:-90
   },
   Feedback_Input: {
     width: 264,
-    height: 173,
+    height: 28,
     borderRadius: 10,
-    backgroundColor: Colors.white,
-    marginTop: 35,
+    backgroundColor: Colors.white
   },
-  Feedback_Input: {
+  Feedback_Input1: {
     width: 264,
     height: 173,
     borderRadius: 10,
     backgroundColor: Colors.white,
-    marginTop: 35,
+    marginTop: 15,
   },
 });
