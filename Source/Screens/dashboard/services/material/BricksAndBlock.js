@@ -5,11 +5,13 @@ import Styles from '../../../../Assets/Styles/Styles';
 import Button from '../../../../Components/Button';
 import Buttonq from '../../../../Components/Buttonq';
 import Buttonq1 from '../../../../Components/Buttonq1';
+import { ScrollView } from 'react-native-gesture-handler';
 
 export default function BricksAndBlock({navigation}) {
 
   const [Switch, setSwitch] = useState(true)
   return (
+    <ScrollView>
     <View style={Styles.ProfileDetails_container}>
       <View style={{marginTop: 8, paddingHorizontal: 7}}>
         <RentingButton text="Clay Bricks" 
@@ -52,6 +54,7 @@ export default function BricksAndBlock({navigation}) {
    
  
       </View>
+      </ScrollView>
     )
 }
 const styles=StyleSheet.create({

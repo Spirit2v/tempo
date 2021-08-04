@@ -36,10 +36,13 @@ export default function Cement({navigation}) {
           }}>
         
         
+        <TouchableOpacity>
         <Buttonq title="save" hi={42} wi={53} />
+        </TouchableOpacity>
             <View style={{paddingHorizontal: 10}}></View>
+            <TouchableOpacity>
             <Buttonq1 title="Add more service" hi={42} wi={133} />
-           
+            </TouchableOpacity>
           <View style={{paddingHorizontal: 10}}></View>
      
           </View>

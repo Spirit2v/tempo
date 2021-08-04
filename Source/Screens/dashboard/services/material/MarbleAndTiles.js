@@ -1,5 +1,5 @@
 import React from 'react';
-import {View,TouchableOpacity, Text} from 'react-native';
+import {View,TouchableOpacity, Text, ScrollView} from 'react-native';
 import Styles from '../../../../Assets/Styles/Styles';
 
 import Button from '../../../../Components/Button';
@@ -23,6 +23,7 @@ const Types=['Ceramic Tile' , 'Porcelain Tile ',
   
 const Sizes=['Select All','120 x 120 cm','60 x 120 cm','30 x 120 cm','20 x 120 cm','90 x 90 cm','60 x 90 cm','60 x 60 cm','30 x 60 cm','20 x 60 cm',]
   return (
+    <ScrollView>
     <View style={Styles.ProfileDetails_container}>
       <View style={{marginTop: 8, paddingHorizontal: 7}}>
       <DropdownCheckbox 
@@ -51,5 +52,6 @@ const Sizes=['Select All','120 x 120 cm','60 x 120 cm','30 x 120 cm','20 x 120 c
       </View>
       </View>
     </View>
+    </ScrollView>
   );
 }

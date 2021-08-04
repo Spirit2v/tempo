@@ -15,6 +15,7 @@ const Sizes=[
 
 ]
   return (
+    <ScrollView>
     <View style={Styles.ProfileDetails_container}>
       <View style={{marginTop: 8, paddingHorizontal: 7}}>
 
@@ -40,5 +41,6 @@ const Sizes=[
       </View>
       </View>
     </View>
+    </ScrollView>
   );
 }

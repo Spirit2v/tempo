@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text,TouchableOpacity,} from 'react-native';
+import {View, Text,TouchableOpacity, ScrollView,} from 'react-native';
 import Styles from '../../../../Assets/Styles/Styles';
 import Button from '../../../../Components/Button';
 import Buttonq from '../.././../../Components/Buttonq';
@@ -15,6 +15,7 @@ const Sizes=[
 
 ]
   return (
+    <ScrollView>
     <View style={Styles.ProfileDetails_container}>
       <View style={{marginTop: 8, paddingHorizontal: 7}}>
       <DropdownCheckbox 
@@ -43,5 +44,6 @@ const Sizes=[
       </View>
       </View>
     </View>
+    </ScrollView>
   );
 }

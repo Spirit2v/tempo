@@ -1,5 +1,5 @@
 import React from 'react';
-import {View,TouchableOpacity, Text} from 'react-native';
+import {View,TouchableOpacity, Text, ScrollView} from 'react-native';
 import Styles from '../../../../Assets/Styles/Styles';
 
 import Button from '../../../../Components/Button';
@@ -14,6 +14,7 @@ export default function PaintAndPutty({navigation}) {
   const Types=['Whoye Cement Wall Putty','Acrylic Wall Putty','POP']
   const Brand=['Birla wallcare Putty','Jk Protomac Acryllic Wall Putty','Jk Cement ','Iris Paint Wall Putty','Asian Paint','Bird White','Dulux Paint','VV Paint']
   return (
+    <ScrollView>
     <View style={Styles.ProfileDetails_container}>
       <View style={{marginTop: 8, paddingHorizontal: 7}}>
       <DropdownCheckbox 
@@ -39,5 +40,6 @@ export default function PaintAndPutty({navigation}) {
       </View>
       </View>
     </View>
+    </ScrollView>
   );
 }

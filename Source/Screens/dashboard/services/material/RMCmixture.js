@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text ,TouchableOpacity,} from 'react-native'
+import { View, Text ,TouchableOpacity, ScrollView,} from 'react-native'
 import Styles from '../../../../Assets/Styles/Styles';
 
 import Button from '../../../../Components/Button';
@@ -10,6 +10,7 @@ import ServiceCardSand from '../../../../Components/ServiceCardSand';
 export default function RMCmixture({navigation}) {
  const Grades=['Select All','M 10','M 15','M 20','M 25','M 30','M 35','M 40','M 45']
   return (
+    <ScrollView>
         <View style={Styles.ProfileDetails_container}>
         <View style={{marginTop: 8, paddingHorizontal: 7}}>
 
@@ -31,5 +32,6 @@ export default function RMCmixture({navigation}) {
       </View>
         </View>
       </View>
+      </ScrollView>
     )
 }

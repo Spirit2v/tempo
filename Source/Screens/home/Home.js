@@ -39,6 +39,7 @@ export default class HomeScreen extends Component {
       <FlatList
         style={styles.container}
         contentContainerStyle={{padding: 0}}
+        showsVerticalScrollIndicator={false}
         ListEmptyComponent={
           <>
             <Image source={headerImage} style={styles.headerImage} />

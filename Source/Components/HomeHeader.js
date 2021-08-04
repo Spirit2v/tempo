@@ -30,6 +30,7 @@ const Header_Component = ({Heading}) => {
       </TouchableOpacity>
       <Text style={styles.Header}>{Heading}</Text>
       <TouchableOpacity
+       onPress={() => navigation.navigate('Help')}
           style={{
             flexDirection: 'row',
             marginHorizontal: 20,

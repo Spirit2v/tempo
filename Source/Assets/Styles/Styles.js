@@ -151,8 +151,7 @@ height:278
   C_materialContainer: {
     backgroundColor: Colors.darkgrey,
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'space-evenly',
+   paddingHorizontal:20
   },
   C_materialScrollview: {},
   Button1: {
