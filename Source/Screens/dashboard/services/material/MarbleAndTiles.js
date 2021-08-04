@@ -1,12 +1,14 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View,TouchableOpacity, Text} from 'react-native';
 import Styles from '../../../../Assets/Styles/Styles';
+
 import Button from '../../../../Components/Button';
 import Buttonq from '../../../../Components/Buttonq';
 import Buttonq1 from '../../../../Components/Buttonq1';
+import DropdownCheckbox from '../../../../Components/DropdownCheckbox';
 import ServiceCardSand from '../../../../Components/ServiceCardSand';
-export default function MarbleAndTiles() {
-  const Brands=['Select All',' Kajaria Ceramics Ltd'
+export default function MarbleAndTiles({navigation}) {
+  const Brand=['Select All',' Kajaria Ceramics Ltd'
    
     ,' Somany Floor Ltd','Bajaj Tiles','Simpolo Tiles'
     ,'HSIL Ltd (Hindware)','Johnson Tiles',
@@ -23,9 +25,19 @@ const Sizes=['Select All','120 x 120 cm','60 x 120 cm','30 x 120 cm','20 x 120 c
   return (
     <View style={Styles.ProfileDetails_container}>
       <View style={{marginTop: 8, paddingHorizontal: 7}}>
-        <ServiceCardSand title={Brands }/>
-        <ServiceCardSand title= {Types}/>
-        <ServiceCardSand title= {Sizes }/>
+      <DropdownCheckbox 
+   Types={Brand}
+   placeholder="Select brands"
+   />
+     <DropdownCheckbox 
+   Types={Types}
+   placeholder="Select Types"
+   />
+
+<DropdownCheckbox 
+   Types={Sizes}
+   placeholder="Select Sizes"
+   />
         <View
           style={{
             marginTop: 20,
@@ -33,10 +45,10 @@ const Sizes=['Select All','120 x 120 cm','60 x 120 cm','30 x 120 cm','20 x 120 c
             alignItems: 'center',
             flexDirection: 'row',
           }}>
-          <Buttonq title="save" hi={42} wi={53} />
-          <View style={{paddingHorizontal: 10}}></View>
-          <Buttonq1 title="Add more service" hi={42} wi={133} />
-        </View>
+        <Buttonq title="save" hi={42} wi={53} />
+            <View style={{paddingHorizontal: 10}}></View>
+            <Buttonq1 title="Add more service" hi={42} wi={133} />
+      </View>
       </View>
     </View>
   );

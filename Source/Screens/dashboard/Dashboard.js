@@ -48,6 +48,7 @@ const Dashboard = ({navigation}) => {
           borderBottomWidth: 1,
           borderColor: 'grey',
           marginHorizontal: 20,
+          marginTop:-19
         }}>
         <Text style={{fontSize: 18, color: 'white'}}>New Leads</Text>
         <TouchableOpacity

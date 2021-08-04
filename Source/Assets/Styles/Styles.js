@@ -145,7 +145,7 @@ export default StyleSheet.create({
   Service_container1: {
 
     backgroundColor: Colors.darkgrey,
-
+height:278
 
   },
   C_materialContainer: {

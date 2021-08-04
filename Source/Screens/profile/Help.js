@@ -36,6 +36,7 @@ const Help = () => {
                     color: 'grey',
                     justifyContent: 'center',
                     textAlign: 'center',
+                    marginTop:3
                   }}>
                   Tell us more about your problem
                 </Text>

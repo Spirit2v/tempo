@@ -1,17 +1,6 @@
 import React, {Component} from 'react';
 
-
-import {View, Text, TouchableOpacity} from 
-'react-native';
-
-
-
-
-
-
-
-
-
+import {View, Text, TouchableOpacity} from 'react-native';
 
 import {ScrollView, TextInput} from 'react-native-gesture-handler';
 import Styles from '../../Assets/Styles/Styles';
@@ -30,7 +19,7 @@ export default class Feedback extends Component {
   async submitHandler() {
     const help = 'suyash fyufjfj hjkjhkihklhlihl';
 
-    axios.get('http://localhost:7000/user/users').then(res => {
+    axios.get('localhost:7000/user/users').then(res => {
       console.log(res);
     });
   }
@@ -57,16 +46,14 @@ export default class Feedback extends Component {
             <Text>{this.state.Help}</Text>
             <View style={{alignItems: 'center'}}></View>
           </View>
-          <View
-          style={{flexDirection:'row',marginTop:20}}
-          >
-          <Ionicons name="star" size={32} color="#ffb600" />
-          <Ionicons name="star" size={32} color="#ffb600" /> 
-           <Ionicons name="star" size={32} color="#ffb600" />
-          <Ionicons name="star" size={32} color="#ffb600" />
-          <Ionicons name="star-outline" size={32} color="#ffb600" />
+          <View style={{flexDirection: 'row', marginTop: 20}}>
+            <Ionicons name="star" size={32} color="#ffb600" />
+            <Ionicons name="star" size={32} color="#ffb600" />
+            <Ionicons name="star" size={32} color="#ffb600" />
+            <Ionicons name="star" size={32} color="#ffb600" />
+            <Ionicons name="star-outline" size={32} color="#ffb600" />
           </View>
-        
+
           <Button
             onPress={this.submitHandler}
             title="Submit"

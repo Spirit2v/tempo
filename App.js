@@ -23,7 +23,7 @@ import StatusBar from './Source/Components/StatusBar';
 const App = () => {
   return (
     <>
-      <StatusBar backgroundColor="black" barStyle="light-content" />
+      <StatusBar backgroundColor="#121417" barStyle="light-content" />
       <NavigationContainer>
         <StackNavigator />
       </NavigationContainer>

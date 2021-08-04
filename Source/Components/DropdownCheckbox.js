@@ -32,7 +32,7 @@ import {FlatList, ScrollView} from 'react-native-gesture-handler';
 import {flexDirection} from 'styled-system';
 import ArrowUpward from './ArrowUpward';
 
-const DropdownCheckbox = ({Types}) => {
+const DropdownCheckbox = ({Types,placeholder}) => {
 //   const Types = [
 //     '   Select All         ',
 //     'Cementitious repair motars            ',
@@ -46,12 +46,17 @@ const DropdownCheckbox = ({Types}) => {
 const Data = Types
   const [shouldShow, setShouldShow] = useState(true);
   const renderItem = ({item}) => (
-    <ScrollView style={{flex: 1}}>
+  
       <View style={[styles.secondbox1]}>
         <Checkbox1 />
+        <View
+        style={{width:12}}
+        >
+
+        </View>
         <Text style={{color: 'white'}}>{item}</Text>
       </View>
-    </ScrollView>
+   
   );
   return (
     <SafeAreaView>
@@ -59,7 +64,7 @@ const Data = Types
         {shouldShow ? (
           <TouchableOpacity onPress={() => setShouldShow(!shouldShow)}>
             <View style={styles.firstbox}>
-              <Text style={{color: 'white'}}>Enter name</Text>
+              <Text style={{color: 'white'}}>{placeholder}</Text>
               <ArrowDownward />
             </View>
           </TouchableOpacity>
@@ -67,7 +72,7 @@ const Data = Types
           <>
             <TouchableOpacity onPress={() => setShouldShow(!shouldShow)}>
               <View style={styles.secondbox}>
-                <Text style={{color: 'white'}}>Enter name</Text>
+                <Text style={{color: 'white'}}>{placeholder}</Text>
                 <ArrowUpward />
               </View>
             </TouchableOpacity>

@@ -32,9 +32,11 @@ export default NotificationCard;
 
 const styles = StyleSheet.create({
   Box: {
-    margin: 10,
+   
+    padding:8,
+    marginVertical:10,
     height: 100,
-    width: 363,
+    width: '100%',
     backgroundColor: Colors.grey,
 
     borderRadius: 10,

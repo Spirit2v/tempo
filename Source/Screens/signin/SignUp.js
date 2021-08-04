@@ -13,6 +13,7 @@ import {useNavigation, CommonActions} from '@react-navigation/native';
 import TextStyles from '../../Assets/Styles/TextStyles';
 import {TextInput} from 'react-native-paper';
 import Home from '../home/Home';
+import { ScrollView } from 'react-native-gesture-handler';
 
 const screenHeight = Dimensions.get('window').height;
 
@@ -23,10 +24,13 @@ const SignUp = () => {
   const [passwordVisible2, setPasswordVisible2] = useState(false);
   return (
     <View
-      style={Object.assign(
-        {...Styles.Signup_container},
-        {minHeight: screenHeight},
-      )}>
+    style={{flex:1
+      ,backgroundColor:'black'
+      }}>
+<ScrollView>
+
+    <View
+    >
       <View style={[Styles.SignIn_title]}>
         <Text style={[TextStyles.SignIn_titleText]}>Sign Up</Text>
       </View>
@@ -113,6 +117,8 @@ const SignUp = () => {
           <Text style={[TextStyles.Footer_text]}>Construction Flow</Text>
         </View>
       </View>
+    </View>
+    </ScrollView>
     </View>
   );
 };

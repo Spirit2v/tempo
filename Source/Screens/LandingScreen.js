@@ -38,18 +38,20 @@ const LandingScreen = ({navigation}) => {
         }
         onLayout={_onLayout}>
         <View>
-          <Image
+        <Image
             source={CFlogo}
-            style={{marginTop: 30, marginBottom: 60, height: 80, width: 349}}
+            style={{marginVertical:20,
+              height: 100, width: 340}}
           />
           <Image
             source={Landingimage}
             style={{
-              marginTop: -20,
+              marginTop: -30,
               marginLeft: 59,
-              height: 150,
-              marginBottom: 40,
-              width: 234,
+              height: 230,
+              width: 230,
+              marginBottom: 40
+             
             }}
           />
         </View>
@@ -75,7 +77,7 @@ const LandingScreen = ({navigation}) => {
               width: 230,
               fontFamily: 'Open Sans',
               fontSize: 12,
-              marginBottom: 40,
+              marginBottom: 20,
             }}>
             Get all services at your fingertips. Now keeping records of your
             products and deals has become easier with construction flow.

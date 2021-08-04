@@ -16,13 +16,13 @@ export default Service_card;
 
 const styles = StyleSheet.create({
   Box: {
-    height: 142,
-    width: 142,
+    height: 132,
+    width: 132,
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: Colors.blackBlue,
     borderRadius: 10,
-    margin: 20,
+    margin: 30,
     shadowColor: '#E8EDF3',
     shadowOffset: {
       width: 0,
@@ -34,7 +34,8 @@ const styles = StyleSheet.create({
     elevation: 4,
   },
   Icon: {
-    height: 55,
-    width: 61,
+    height: 42,
+    width: 42,
+    marginBottom:13
   },
 });
