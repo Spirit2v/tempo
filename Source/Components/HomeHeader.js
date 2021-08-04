@@ -40,7 +40,7 @@ const Header_Component = ({Heading}) => {
             name="help-outline"
             color="white"
             style={{marginRight: 5}}
-            size={18}
+            size={20}
           />
           <Text style={{color: 'white', fontSize: 12, lineHeight: 20}}>
             Help
@@ -52,7 +52,7 @@ const Header_Component = ({Heading}) => {
 <View style={styles.NotificationContainer}>
 <MaterialIcons
             name="notifications-none"
-            size={18}
+            size={20}
             color={Colors.yellow}
           />
 </View>

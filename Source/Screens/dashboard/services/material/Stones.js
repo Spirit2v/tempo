@@ -8,6 +8,7 @@ import Buttonq1 from '../../../../Components/Buttonq1';
 import ServiceCardSand from '../../../../Components/ServiceCardSand';
 
 import DropdownCheckbox from '../../../../Components/DropdownCheckbox';
+import { ScrollView } from 'react-native-gesture-handler';
 export default function BricksAndBlock({navigation}) {
 const Types=['Select All','Black','White']
 const Sizes=[
@@ -35,9 +36,15 @@ const Sizes=[
             alignItems: 'center',
             flexDirection: 'row',
           }}>
-      <Buttonq title="save" hi={42} wi={53} />
+      <TouchableOpacity>
+        <Buttonq title="save" hi={42} wi={53} />
+        </TouchableOpacity>
             <View style={{paddingHorizontal: 10}}></View>
+            <TouchableOpacity
+            onPress={()=>navigation.navigate('Services')}
+            >
             <Buttonq1 title="Add more service" hi={42} wi={133} />
+            </TouchableOpacity>
       </View>
       </View>
     </View>

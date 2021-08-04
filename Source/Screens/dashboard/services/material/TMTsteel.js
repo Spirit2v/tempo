@@ -38,9 +38,15 @@ const Sizes=[
             alignItems: 'center',
             flexDirection: 'row',
           }}>
-       <Buttonq title="save" hi={42} wi={53} />
+      <TouchableOpacity>
+        <Buttonq title="save" hi={42} wi={53} />
+        </TouchableOpacity>
             <View style={{paddingHorizontal: 10}}></View>
+            <TouchableOpacity
+            onPress={()=>navigation.navigate('Services')}
+            >
             <Buttonq1 title="Add more service" hi={42} wi={133} />
+            </TouchableOpacity>
       </View>
       </View>
     </View>

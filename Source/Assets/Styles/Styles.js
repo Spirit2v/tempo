@@ -83,8 +83,7 @@ export default StyleSheet.create({
 
   Footer: {
     flexDirection: 'row',
-    position: 'absolute',
-    bottom: 10
+  
   },
 
   Signup_container: {
